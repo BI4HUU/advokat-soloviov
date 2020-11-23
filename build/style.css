@@ -1,0 +1,259 @@
+html {
+  background-color: #bbb;
+}
+body {
+  font-family: Raleway, sans-serif;
+}
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+.col {
+  display: flex;
+  flex-direction: column;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%;
+}
+.col-left {
+  margin-right: 15px;
+}
+.col-right {
+  margin-right: 15px;
+}
+header {
+  border-bottom: 3px solid #aaa;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+}
+.logo {
+  display: block;
+  height: 40px;
+  padding: 15px 0;
+}
+menu {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  height: 100%;
+}
+.menu-item {
+  display: inline-block;
+  text-decoration: none;
+  line-height: 100%;
+  line-height: 70px;
+  color: #222;
+  padding-left: 10px;
+  font-weight: 500;
+  font-weight: bold;
+}
+.menu-item-akcent {
+  color: #3d449a;
+}
+.contact-mini {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.contact-mini-item {
+  display: inline-block;
+  text-decoration: none;
+  color: #111;
+  vertical-align: middle;
+  padding: 16px 22px 16px 0px;
+}
+.contact-mini-item:hover {
+  color: #359;
+}
+.contact-mini-item:hover .contact-mini-icon {
+  fill: #359;
+}
+.contact-mini-icon {
+  height: 20px;
+  fill: #333;
+  padding: 0 12px 0 0;
+  margin-bottom: -4px;
+}
+.facebook {
+  color: #385898;
+  font-size: 18px;
+  letter-spacing: -1px;
+  padding: 16px 15px 16px 0px;
+  font-weight: 600;
+  font-weight: bold;
+  text-decoration: none;
+}
+.youtube {
+  padding: 12px 15px 12px 0px;
+}
+.name_desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  text-align: center;
+  background-color: #777;
+  background-image: url("https://advokat-soloviov.com.ua/images/demo/slideshow/sli2.jpg");
+}
+.name_desc-h1 {
+  display: flex;
+  align-self: center;
+  text-transform: uppercase;
+  line-height: 1.3;
+  color: #fff;
+  font-size: 52px;
+  text-align: center;
+  font-weight: 400;
+  font-family: roboto, Arial, sans-serif;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.services * {
+  text-align: center;
+}
+.services a {
+  display: inline-block;
+  text-decoration: none;
+  color: #3d449a;
+  font-weight: bold;
+  padding: 8px;
+  margin: 2px;
+  width: 100%;
+}
+.services [href="#"] {
+  color: #222;
+}
+.services_head {
+  min-width: 100%;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.services_icon {
+  display: inline-block;
+  transition: all 0.8s;
+  padding: 10px 60px;
+}
+.services_icon_wrap {
+  display: inline-block;
+  min-width: 100%;
+  padding: 0 12px;
+}
+.services_icon_wrap:hover .services_icon {
+  transform: rotateY(360deg);
+}
+.services_icon_wrap:hover svg {
+  fill: #3d449a;
+}
+.services_icon svg {
+  fill: #9dabb8;
+  height: 50px;
+}
+.h2 {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  padding: 20px 30px 20px 30px;
+  margin: 10px auto;
+  text-transform: uppercase;
+  font-size: 26px;
+  line-height: 26px;
+  font-weight: 700;
+}
+.h2:before {
+  content: '';
+  display: block;
+  margin: auto;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 140px;
+  border-bottom: 1px solid #666;
+}
+.about-section,
+.advant-section {
+  background-color: #f2f2f2;
+}
+.contact-mini,
+.services-bg {
+  background-color: #fcfcfc;
+}
+.about,
+.advant {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.I-img,
+.diplom {
+  width: 100%;
+  min-width: 200px;
+}
+.diplom {
+  display: block;
+  margin-top: 22px;
+}
+.about p {
+  color: #333;
+  margin-block-start: 0;
+  padding-top: 0;
+}
+.about b {
+  color: #ad836a;
+}
+.h3 {
+  display: inline-block;
+  margin-block-end: 3px;
+  margin-block-start: 0;
+}
+.list-icon {
+  display: flex;
+}
+.col-icon {
+  min-width: 34px;
+  min-height: 34px;
+  padding: 0 15px 0 5px;
+  fill: #3d449a;
+}
+.advant-text {
+  padding-bottom: 10px;
+}

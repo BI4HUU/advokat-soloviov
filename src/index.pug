@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		style
+			include ../build/normalize.css
+			include ../build/style.css
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		title Document2
+	body
+		header
+			.container.header-container
+				img.logo(src="img/logosite1.png", alt="")
+				menu
+					a(href="#").menu-item Главная
+					a(href="#").menu-item Услуги
+					a(href="#").menu-item Обо мне
+					a(href="#").menu-item Отзывы
+					a(href="#").menu-item Контакты
+
+		section.contact-mini
+			a.contact-mini-item(href="tel:+380935299116")
+				include ../src/phone.html
+				| +380935299116
+			a.contact-mini-item(href="mailto:advokat.soloviov@gmail.com")
+				include ../src/mail.html
+				| advokat.soloviov@gmail.com
+			a.contact-mini-item.facebook(href="https://www.facebook.com/profile.php?id=100021842880966") Facebook
+			a.contact-mini-item.youtube(href="https://www.youtube.com/channel/UCVG3-hESyVPSVU6gydTPDGw?view_as=subscriber")
+				include ../src/youtube.html
+
+		section.name_desc
+			h1.name_desc-h1 Адвокат Дмитрий Соловьёв <br>Юридические Услуги <br>в Одессе и по Украине
+
+		section.services-bg
+			.services.container
+				.services_head
+					h2.h2 ВИДЫ УСЛУГ
+				.col.col-left
+					.services_icon_wrap
+						i.services_icon
+							include ../src/mallet.html
+					a(href="#") Юридические консультации
+					a(href="https://advokat-soloviov.com.ua/lawyer-in-civil-cases") Адвокат по гражданским делам
+					a(href="https://advokat-soloviov.com.ua/family-lawyer") Адвокат по семейным делам
+					a(href="#") Адвокат по ДТП
+					a(href="#") Решение жилищных споров
+					a(href="#") Решение споров по земле и недвижимости
+					a(href="#") Списание долгов по кредитам и микрозаймам
+				.col.col-right
+					.services_icon_wrap
+						i.services_icon
+							include ../src/courthouse.html
+					a(href="#") Представление интересов в суде
+					a(href="https://advokat-soloviov.com.ua/criminal-lawyer") Адвокат по уголовным делам
+					a(href="https://advokat-soloviov.com.ua/migration-lawyer") Миграционный адвокат
+					a(href="#") Адвокат по Перерасчету Военных Пенсий
+					a(href="#") Юридическое обслуживание предприятий
+					a(href="#") Подготовка и экспертиза договоров
+					a(href="#") Обжалование незаконных решений и штрафов
+
+		section.about-section
+			.about.container
+				.services_head
+					h2.h2 ОБО МНЕ
+				.col.col-left
+					img.I-img(src="https://advokat-soloviov.com.ua/images/img_0728.jpg", alt="")
+				.col.col-right
+					p Приветствую Вас на моем сайте, если у Вас возникли вопросы юридического характера, в которых требуется помощь адвоката или юриста, Вы можете обратиться ко мне для получения консультации. У меня индивидуальный подход к каждому клиенту и я всегда нацелен только на положительный результат, обращайтесь ко мне и останетесь довольны.
+					b Стоимость оказания правовой помощи зависит от сложности и возможной продолжительности дела, объема предстоящей работы. Связаться со мной можно по Телефону или по Email в разделе Контакты.
+					img.I-img.diplom(src="https://advokat-soloviov.com.ua/images/2017/07/01/002.jpg", alt="")
+
+		section.advant-section
+			.advant.container
+				.services_head
+					h2.h2 ПРЕИМУЩЕСТВА РАБОТЫ СО МНОЙ
+				.col.col-left
+					img.I-img(src="https://advokat-soloviov.com.ua/images/2017/07/01/property-settlement.jpg", alt="")
+				.col.col-right 
+					.list-icon
+						.col-icon
+							include ../src/info.html
+						.advant-text
+							h3.h3 Честность
+							p Я реально оценю ситуацию и перспективы решения вашей проблемы и буду работать исключительно с целью выиграть дело в суде или добиться иного положительного результата.
+					.list-icon
+						.col-icon
+							include ../src/info.html
+						.advant-text
+							h3.h3 Компетентность
+							p Я оказываю правовую помощь лишь в тех областях, в которых имею значительный опыт и накопленные знания.
+					.list-icon
+						.col-icon
+							include ../src/info.html
+						.advant-text
+							h3.h3 Доступность
+							p Я оказываю адвокатские услуги в Одессе по вполне доступным ценам. При этом, юридические услуги могут быть оплачены в различной форме. Предусмотрена как оплата за отдельные действия, так и единоразовая оплата.
+			
+			
