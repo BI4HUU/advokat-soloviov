@@ -213,7 +213,8 @@ menu {
   background-color: #f2f2f2;
 }
 .contact-mini,
-.services-bg {
+.services-bg,
+.reviews-section {
   background-color: #fcfcfc;
 }
 .about,
@@ -256,4 +257,40 @@ menu {
 }
 .advant-text {
   padding-bottom: 10px;
+}
+.reviews p {
+  font-weight: normal;
+  font-style: italic;
+  margin-block-start: 8px;
+  margin-block-end: 8px;
+  line-height: 1.25;
+}
+.reviews-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+.reviews-item {
+  box-sizing: border-box;
+  padding: 15px;
+  font-size: 16px;
+  width: 25%;
+}
+p.reviews-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+.call-section {
+  padding-top: 40px;
+  background-color: transparent;
+}
+.call-section .container {
+  text-align: center;
+}
+.call-button {
+  display: inline-block;
+  padding: 15px 25px;
+  margin: 50px auto 70px auto;
+  color: #fff;
+  background-color: #3d449a;
 }
