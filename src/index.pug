@@ -17,11 +17,11 @@ html(lang="en")
 					a(href="#").menu-item Обо мне
 					a(href="#").menu-item Отзывы
 					a(href="#").menu-item Контакты
-
+		.mt70
 		section.contact-mini
 			a.contact-mini-item(href="tel:+380935299116")
 				include ../src/phone.html
-				| +380935299116
+				| +38(093) 529-91-16
 			a.contact-mini-item(href="mailto:advokat.soloviov@gmail.com")
 				include ../src/mail.html
 				| advokat.soloviov@gmail.com
@@ -119,5 +119,22 @@ html(lang="en")
 				.services_head
 					h2.h2 ЗВОНИТЕ ПРЯМО СЕЙЧАС!
 				a(href="tel:+380935299116").call-button +38(093) 529-91-16
+		.call-bg
 
+		section.contact-section
+			.container
+				.services_head
+					h2.h2 КОНТАКТЫ
+			a.contact-mini-item(href="#") Офис: г. Одесса, улица Базарная, 85
+			a.contact-mini-item(href="tel:+380935299116")
+				include ../src/phone.html
+				| +38(093) 529-91-16
+			a.contact-mini-item(href="mailto:advokat.soloviov@gmail.com")
+				include ../src/mail.html
+				| advokat.soloviov@gmail.com
+			.contact-soc
+				a.contact-mini-item.facebook(href="https://www.facebook.com/profile.php?id=100021842880966") Facebook
+				a.contact-mini-item.youtube(href="https://www.youtube.com/channel/UCVG3-hESyVPSVU6gydTPDGw?view_as=subscriber")
+					include ../src/youtube.html
 
+		footer

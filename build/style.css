@@ -1,7 +1,9 @@
 html {
-  background-color: #bbb;
+  background-color: #fbfbfb;
 }
 body {
+  position: relative;
+  z-index: 3;
   font-family: Raleway, sans-serif;
 }
 .container {
@@ -48,7 +50,16 @@ body {
   margin-right: 15px;
 }
 header {
-  border-bottom: 3px solid #aaa;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  width: 100vw;
+  box-shadow: 0 3px 3px rgba(0,0,0,0.05);
+  z-index: 6;
+  margin-bottom: 3px;
 }
 .header-container {
   display: flex;
@@ -81,10 +92,13 @@ menu {
 .menu-item-akcent {
   color: #3d449a;
 }
+.mt70 {
+  margin-top: 70px;
+}
 .contact-mini {
   display: flex;
+  padding-top: 5px;
   justify-content: center;
-  margin: auto;
 }
 .contact-mini-item {
   display: inline-block;
@@ -109,7 +123,7 @@ menu {
   color: #385898;
   font-size: 18px;
   letter-spacing: -1px;
-  padding: 16px 15px 16px 0px;
+  padding: 15px 15px 17px 0px;
   font-weight: 600;
   font-weight: bold;
   text-decoration: none;
@@ -125,6 +139,8 @@ menu {
   text-align: center;
   background-color: #777;
   background-image: url("https://advokat-soloviov.com.ua/images/demo/slideshow/sli2.jpg");
+  background-position: center;
+  background-size: cover;
 }
 .name_desc-h1 {
   display: flex;
@@ -157,8 +173,10 @@ menu {
   margin: 2px;
   width: 100%;
 }
-.services [href="#"] {
+.services [href="#"],
+.contact-section [href="#"] {
   color: #222;
+  cursor: default;
 }
 .services_head {
   min-width: 100%;
@@ -206,15 +224,17 @@ menu {
   left: 50%;
   transform: translateX(-50%);
   width: 140px;
-  border-bottom: 1px solid #666;
+  border-bottom: 1px solid #888;
 }
 .about-section,
-.advant-section {
+.contact-section,
+.reviews-section {
   background-color: #f2f2f2;
 }
 .contact-mini,
+.advant-section,
 .services-bg,
-.reviews-section {
+header {
   background-color: #fcfcfc;
 }
 .about,
@@ -281,7 +301,6 @@ p.reviews-name {
   font-weight: bold;
 }
 .call-section {
-  padding-top: 40px;
   background-color: transparent;
 }
 .call-section .container {
@@ -292,5 +311,45 @@ p.reviews-name {
   padding: 15px 25px;
   margin: 50px auto 70px auto;
   color: #fff;
+  background-color: #3d449a;
+}
+.call-bg {
+  position: fixed;
+  z-index: -1;
+  background-image: url("img/testi1.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  width: 100vw;
+  height: 100%;
+  height: 100vh;
+}
+.reviews-section,
+.about-section,
+.services-bg,
+.advant-section,
+.call-section {
+  padding: 20px 0 30px 0;
+}
+.contact-section {
+  padding: 20px 0 30px 0;
+}
+.contact-section a {
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+}
+.contact-soc {
+  display: flex;
+  justify-content: center;
+}
+footer {
+  height: 40px;
   background-color: #3d449a;
 }
