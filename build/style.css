@@ -60,7 +60,7 @@ header {
   width: 100%;
   width: 100vw;
   box-shadow: 0 3px 3px rgba(0,0,0,0.05);
-  z-index: 6;
+  z-index: 4;
   margin-bottom: 3px;
 }
 .header-container {
@@ -122,22 +122,38 @@ nav {
   margin-top: 5px;
   margin-bottom: 5px;
 }
+.fon-menu {
+  display: none;
+}
 @media (max-width: 768px) {
   .menu-item {
     display: none;
   }
-  nav.menu-open {
+  .menu-open nav {
     flex-direction: column;
     position: absolute;
+    z-index: 6;
     right: 0;
     height: 100%;
     height: 100vh;
-    padding: 20px 30px 10px 30px;
+    padding: 20px 60px 10px 35px;
     background-color: #fff;
   }
   .menu-open .menu-item {
     display: inline-block;
     line-height: 50px;
+  }
+  .menu-open .fon-menu {
+    display: block;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    right: 0;
+    height: 160%;
+    height: 110vh;
+    width: 160%;
+    width: 130vh;
+    background-color: rgba(3,3,3,0.2);
   }
 }
 @media (min-width: 768px) {

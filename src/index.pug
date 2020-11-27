@@ -8,10 +8,11 @@ html(lang="en")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
 		title Document2
 	body
-		header
+		header(class="")
+			.fon-menu
 			.container.header-container
 				img.logo(src="img/logosite1.png", alt="")
-				nav.menu-open
+				nav
 					a(href="#").menu-item Главная
 					a(href="#").menu-item Услуги
 					a(href="#").menu-item Обо мне
@@ -142,3 +143,5 @@ html(lang="en")
 					include ../src/youtube.html
 
 		footer
+		script
+			include ../src/script.js
