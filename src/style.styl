@@ -1,10 +1,12 @@
 html
 	background-color #fbfbfb
+	overflow-x: hidden
 	
 
 body
 	position relative
 	z-index 3
+	overflow-x: hidden
 	font-family Raleway, sans-serif
 
 .container 
@@ -49,7 +51,6 @@ body
 // --------------------------
 
 header
-	// border-bottom 3px solid #ccc
 	display block
 	position fixed
 	top 0
@@ -64,6 +65,7 @@ header
 .header-container
 	display flex
 	justify-content space-between
+	box-sizing border-box
 	height 70px
 
 .logo
@@ -71,12 +73,14 @@ header
 	height 40px
 	padding 15px 0
 
-menu
+nav
+	display flex
+	flex-wrap nowrap
 	margin-block-start 0
 	margin-block-end 0
 	margin-inline-start 0px
 	margin-inline-end 0px
-	padding-inline-start 40px
+	padding-inline-start 0
 	height 100%
 
 .menu-item
@@ -91,8 +95,64 @@ menu
 
 .menu-item-akcent
 	color #3d449a
+	
 
-// ------------------
+
+.burger
+	display inline-block
+	line-height 100%
+	line-height 70px
+	height 16px
+	height 70px
+	// width 16px
+	padding-top 24px
+	padding-bottom 24px
+	padding-left 15px
+	padding-right 15px
+	margin-right -15px
+	box-sizing border-box
+
+// @media (max-width: 576px) 
+// 	.burger
+// 		margin-right 15px
+
+.menu-open .burger
+	display none
+
+.burger_line
+	height 2px
+	width 16px
+	background-color #223
+
+.burger_line-2
+	margin-top 5px
+	margin-bottom 5px
+
+	
+@media (max-width: 768px) 
+	.menu-item
+		display none
+
+	nav.menu-open
+		flex-direction column
+		position absolute
+		right 0
+		height 100%
+		height 100vh
+		padding 20px 30px 10px 30px
+		background-color #fff
+
+	.menu-open .menu-item
+		display inline-block
+		line-height 50px
+	
+@media (min-width: 768px) 
+	.burger
+		display none
+
+
+// -----------  contact-mini  -------
+
 
 .mt70
 	margin-top 70px
@@ -136,7 +196,7 @@ menu
 	padding 12px 15px 12px 0px
 
 
-// ------------------
+// ------------   name_desc   ------
 
 .name_desc
 	display flex
@@ -153,7 +213,7 @@ menu
 	display flex
 	align-self: center
 	text-transform uppercase
-	line-height 1.3
+	line-height 1.5
 	color #fff
 	font-size 52px
 	text-align center
@@ -161,6 +221,33 @@ menu
 	font-family roboto, Arial, sans-serif
 	margin-block-start 0
 	margin-block-end 0
+
+
+@media (min-width: 576px) 
+	.name_desc-h1 
+		line-height 1.45
+		font-size 33px
+
+@media (min-width: 676px) 
+	.name_desc-h1 
+		line-height 1.4
+		font-size 38px
+	
+@media (min-width: 768px) 
+	.name_desc-h1 
+		line-height 1.35
+		font-size 44px
+	
+@media (min-width: 992px) 
+	.name_desc-h1 
+		line-height 1.3
+		font-size 48px
+	
+@media (min-width: 1200px) 
+	.name_desc-h1 
+		font-size 52px
+
+
 
 // ------------  ВИДЫ УСЛУГ  ------
 
@@ -233,10 +320,19 @@ menu
 	transform: translateX(-50%)
 	width 140px
 	border-bottom 1px solid #888
+
+
+@media (max-width: 992px) 
+	.services  .col 
+		min-width: 100%
+		margin-top 15px
+		margin-bottom 15px
+
 	
 
 
 // -------------  ОБО МНЕ  -----
+
 
 .about-section, .contact-section, .reviews-section
 	background-color: #f2f2f2
@@ -269,7 +365,14 @@ menu
 	color #ad836a
 
 
-// ------------  ПРЕИМУЩЕСТВА РАБОТЫ СО МНОЙ  ------
+@media (max-width: 992px) 
+	.about  .col 
+		min-width: 100%
+		margin-top 15px
+		margin-bottom 15px
+
+
+// -------  ПРЕИМУЩЕСТВА РАБОТЫ СО МНОЙ  -----------
 
 .h3 
 	display inline-block
@@ -289,7 +392,17 @@ menu
 	padding-bottom 10px
 
 
+@media (max-width: 992px) 
+	.advant .col 
+		min-width: 100%
+		margin-top 15px
+		margin-bottom 15px
+
+
+
 // ------------  ОТЗЫВЫ О МОЕЙ РАБОТЕ  ------
+
+
 
 .reviews p
 	font-weight normal
@@ -304,14 +417,23 @@ menu
 	margin -15px
 
 .reviews-item
+	width 100%
 	box-sizing: border-box
 	padding 15px
 	font-size: 16px
-	width 25%
 
 p.reviews-name
 	font-size 20px
 	font-weight bold
+
+@media (min-width: 576px) 
+	.reviews-item
+		width 50%
+	
+@media (min-width: 1200px)
+	.reviews-item
+		width 25%
+
 
 
 // -----------  ЗВОНИТЕ ПРЯМО СЕЙЧАС! -------
