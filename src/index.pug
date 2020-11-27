@@ -10,34 +10,36 @@ html(lang="en")
 	body
 		header(class="")
 			.fon-menu
-			.container.header-container
+			.container.header-container(style="position: static;")
 				img.logo(src="img/logosite1.png", alt="")
 				nav
-					a(href="#").menu-item Главная
-					a(href="#").menu-item Услуги
-					a(href="#").menu-item Обо мне
-					a(href="#").menu-item Отзывы
-					a(href="#").menu-item Контакты
+					a(href="#top").menu-item Главная
+					a(href="#services").menu-item Услуги
+					a(href="#about").menu-item Обо мне
+					a(href="#reviews").menu-item Отзывы
+					a(href="#contact").menu-item Контакты
 					.burger
 						.burger_line
 						.burger_line.burger_line-2
 						.burger_line
-		.mt70
+		#top.mb70or50
 		section.contact-mini
 			a.contact-mini-item(href="tel:+380935299116")
 				include ../src/phone.html
 				| +38(093) 529-91-16
-			a.contact-mini-item(href="mailto:advokat.soloviov@gmail.com")
+			a.contact-mini-item.contact-mini-item--mail(href="mailto:advokat.soloviov@gmail.com")
 				include ../src/mail.html
 				| advokat.soloviov@gmail.com
-			a.contact-mini-item.facebook(href="https://www.facebook.com/profile.php?id=100021842880966") Facebook
-			a.contact-mini-item.youtube(href="https://www.youtube.com/channel/UCVG3-hESyVPSVU6gydTPDGw?view_as=subscriber")
-				include ../src/youtube.html
+			.contact-soc-wrap
+				a.contact-mini-item.facebook(href="https://www.facebook.com/profile.php?id=100021842880966") Facebook
+				a.contact-mini-item.youtube(href="https://www.youtube.com/channel/UCVG3-hESyVPSVU6gydTPDGw?view_as=subscriber")
+					include ../src/youtube.html
 
 		section.name_desc
 			h1.name_desc-h1 Адвокат Дмитрий Соловьёв <br>Юридические Услуги <br>в Одессе и по Украине
 
 		section.services-bg
+			#services
 			.services.container
 				.services_head
 					h2.h2 ВИДЫ УСЛУГ
@@ -65,6 +67,7 @@ html(lang="en")
 					a(href="#") Обжалование незаконных решений и штрафов
 
 		section.about-section
+			#about
 			.about.container
 				.services_head
 					h2.h2 ОБО МНЕ
@@ -100,8 +103,9 @@ html(lang="en")
 						.advant-text
 							h3.h3 Доступность
 							p Я оказываю адвокатские услуги в Одессе по вполне доступным ценам. При этом, юридические услуги могут быть оплачены в различной форме. Предусмотрена как оплата за отдельные действия, так и единоразовая оплата.
-			
+
 		section.reviews-section
+			#reviews
 			.reviews.container
 				.services_head
 					h2.h2 ОТЗЫВЫ О МОЕЙ РАБОТЕ
@@ -118,7 +122,6 @@ html(lang="en")
 					.reviews-item
 						p Благодаря помощи адвоката Соловьева Дмитрия Игоревича, нам с мужем удалось в судебном порядке повысить военную пенсию на целых 20%. От лица нашей семьи хочу выразить Вам благодарность.
 						p.reviews-name Игнатова Екатерина Олеговна
-			
 		section.call-section
 			.container
 				.services_head
@@ -127,6 +130,7 @@ html(lang="en")
 		.call-bg
 
 		section.contact-section
+			#contact
 			.container
 				.services_head
 					h2.h2 КОНТАКТЫ
@@ -137,7 +141,7 @@ html(lang="en")
 			a.contact-mini-item(href="mailto:advokat.soloviov@gmail.com")
 				include ../src/mail.html
 				| advokat.soloviov@gmail.com
-			.contact-soc
+			.contact-soc-wrap
 				a.contact-mini-item.facebook(href="https://www.facebook.com/profile.php?id=100021842880966") Facebook
 				a.contact-mini-item.youtube(href="https://www.youtube.com/channel/UCVG3-hESyVPSVU6gydTPDGw?view_as=subscriber")
 					include ../src/youtube.html
