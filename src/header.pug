@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+html(lang="en")
+	head
+		style
+			include ../build/normalize.css
+			include ../build/style.css
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		title Document2
+	body
+		header(class="")
+			.fon-menu
+			.container.header-container(style="position: static;")
+				img.logo(src="img/logosite1.png", alt="")
+				nav
+					a(href="/index.html#top").menu-item Главная
+					a(href="/index.html#services").menu-item Услуги
+					a(href="/index.html#about").menu-item Обо мне
+					a(href="/index.html#reviews").menu-item Отзывы
+					a(href="#contact").menu-item Контакты
+					a(href="#").menu-item Блог
+					.burger
+						.burger_line
+						.burger_line.burger_line-2
+						.burger_line
+		#top.mb70or50
+		section.contact-mini
+			a.contact-mini-item(href="tel:+380935299116")
+				include ../src/phone.html
+				| +38(093) 529-91-16
+			a.contact-mini-item.contact-mini-item--mail(href="mailto:advokat.soloviov@gmail.com")
+				include ../src/mail.html
+				| advokat.soloviov@gmail.com
+			.contact-soc-wrap
+				a.contact-mini-item.facebook(href="https://www.facebook.com/profile.php?id=100021842880966" target="_blank") Facebook
+				a.contact-mini-item.youtube(href="https://www.youtube.com/channel/UCVG3-hESyVPSVU6gydTPDGw?view_as=subscriber" target="_blank")
+					include ../src/youtube.html

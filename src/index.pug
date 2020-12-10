@@ -1,151 +1,154 @@
-<!DOCTYPE html>
-html(lang="en")
-	head
-		style
-			include ../build/normalize.css
-			include ../build/style.css
-		meta(charset="UTF-8")
-		meta(name="viewport", content="width=device-width, initial-scale=1.0")
-		title Document2
-	body
-		header(class="")
-			.fon-menu
-			.container.header-container(style="position: static;")
-				img.logo(src="img/logosite1.png", alt="")
-				nav
-					a(href="#top").menu-item Главная
-					a(href="#services").menu-item Услуги
-					a(href="#about").menu-item Обо мне
-					a(href="#reviews").menu-item Отзывы
-					a(href="#contact").menu-item Контакты
-					.burger
-						.burger_line
-						.burger_line.burger_line-2
-						.burger_line
-		#top.mb70or50
-		section.contact-mini
-			a.contact-mini-item(href="tel:+380935299116")
-				include ../src/phone.html
-				| +38(093) 529-91-16
-			a.contact-mini-item.contact-mini-item--mail(href="mailto:advokat.soloviov@gmail.com")
-				include ../src/mail.html
-				| advokat.soloviov@gmail.com
-			.contact-soc-wrap
-				a.contact-mini-item.facebook(href="https://www.facebook.com/profile.php?id=100021842880966") Facebook
-				a.contact-mini-item.youtube(href="https://www.youtube.com/channel/UCVG3-hESyVPSVU6gydTPDGw?view_as=subscriber")
-					include ../src/youtube.html
 
-		section.name_desc
-			h1.name_desc-h1 Адвокат Дмитрий Соловьёв <br>Юридические Услуги <br>в Одессе и по Украине
+include ../src/header
+style
+	include ../src/swiper.css
 
-		section.services-bg
-			#services
-			.services.container
-				.services_head
-					h2.h2 ВИДЫ УСЛУГ
-				.col.col-left
-					.services_icon_wrap
-						i.services_icon
-							include ../src/mallet.html
-					a(href="#") Юридические консультации
-					a(href="https://advokat-soloviov.com.ua/lawyer-in-civil-cases") Адвокат по гражданским делам
-					a(href="https://advokat-soloviov.com.ua/family-lawyer") Адвокат по семейным делам
-					a(href="#") Адвокат по ДТП
-					a(href="#") Решение жилищных споров
-					a(href="#") Решение споров по земле и недвижимости
-					a(href="#") Списание долгов по кредитам и микрозаймам
-				.col.col-right
-					.services_icon_wrap
-						i.services_icon
-							include ../src/courthouse.html
-					a(href="#") Представление интересов в суде
-					a(href="https://advokat-soloviov.com.ua/criminal-lawyer") Адвокат по уголовным делам
-					a(href="https://advokat-soloviov.com.ua/migration-lawyer") Миграционный адвокат
-					a(href="#") Адвокат по Перерасчету Военных Пенсий
-					a(href="#") Юридическое обслуживание предприятий
-					a(href="#") Подготовка и экспертиза договоров
-					a(href="#") Обжалование незаконных решений и штрафов
 
-		section.about-section
-			#about
-			.about.container
-				.services_head
-					h2.h2 ОБО МНЕ
-				.col.col-left
-					img.I-img(src="https://advokat-soloviov.com.ua/images/img_0728.jpg", alt="")
-				.col.col-right
-					p Приветствую Вас на моем сайте, если у Вас возникли вопросы юридического характера, в которых требуется помощь адвоката или юриста, Вы можете обратиться ко мне для получения консультации. У меня индивидуальный подход к каждому клиенту и я всегда нацелен только на положительный результат, обращайтесь ко мне и останетесь довольны.
-					b Стоимость оказания правовой помощи зависит от сложности и возможной продолжительности дела, объема предстоящей работы. Связаться со мной можно по Телефону или по Email в разделе Контакты.
-					img.I-img.diplom(src="https://advokat-soloviov.com.ua/images/2017/07/01/002.jpg", alt="")
+section.name_desc
+	h1.name_desc-h1 Адвокат Дмитрий Соловьёв <br>Юридические Услуги <br>в Одессе и по Украине
 
-		section.advant-section
-			.advant.container
-				.services_head
-					h2.h2 ПРЕИМУЩЕСТВА РАБОТЫ СО МНОЙ
-				.col.col-left
-					img.I-img(src="https://advokat-soloviov.com.ua/images/2017/07/01/property-settlement.jpg", alt="")
-				.col.col-right 
-					.list-icon
-						.col-icon
-							include ../src/info.html
-						.advant-text
-							h3.h3 Честность
-							p Я реально оценю ситуацию и перспективы решения вашей проблемы и буду работать исключительно с целью выиграть дело в суде или добиться иного положительного результата.
-					.list-icon
-						.col-icon
-							include ../src/info.html
-						.advant-text
-							h3.h3 Компетентность
-							p Я оказываю правовую помощь лишь в тех областях, в которых имею значительный опыт и накопленные знания.
-					.list-icon
-						.col-icon
-							include ../src/info.html
-						.advant-text
-							h3.h3 Доступность
-							p Я оказываю адвокатские услуги в Одессе по вполне доступным ценам. При этом, юридические услуги могут быть оплачены в различной форме. Предусмотрена как оплата за отдельные действия, так и единоразовая оплата.
+section.services-bg
+	#services
+	.services.container
+		.services_head
+			h2.h2 ВИДЫ УСЛУГ
+		.col.col-left
+			.services_icon_wrap
+				i.services_icon
+					include ../src/mallet.html
+			a(href="legal-services.html" target="_blank") Юридические консультации
+			a(href="lawyer-in-civil-cases.html" target="_blank") Адвокат по гражданским делам
+			a(href="family-disputes.html" target="_blank") Семейные споры
+			a(href="auto-advocat.html" target="_blank") Помощь при ДТП - АвтоАдвокат
+			a(href="housing-disputes.html" target="_blank") Жилищные споры
+			a(href="#") Решение споров по земле и недвижимости
+			a(href="hereditary-disputes.html" target="_blank") Наследственные споры
+			a(href="disputes-with-banks.html" target="_blank") Споры с банками и МФО
+		.col.col-right
+			.services_icon_wrap
+				i.services_icon
+					include ../src/courthouse.html
+			a(href="representation-of-interests.html" target="_blank") Представление интересов в суде
+			a(href="criminal-proceedings.html" target="_blank") Адвокат по уголовным делам
+			a(href="migration-services.html" target="_blank") Миграционные услуги
+			a(href="recalculation-of-military-pensions.html" target="_blank") Перерасчет военных пенсий
+			a(href="#") Юридическое обслуживание предприятий
+			a(href="#") Подготовка и экспертиза договоров
+			a(href="#") Обжалование незаконных решений и штрафов
 
-		section.reviews-section
-			#reviews
-			.reviews.container
-				.services_head
-					h2.h2 ОТЗЫВЫ О МОЕЙ РАБОТЕ
-				.reviews-row
-					.reviews-item
-						p Обращался к адвокату Дмитрию по вопросу обжалования незаконной отмены разрешения на иммиграцию Миграционной Службой, все было сделано в кратчайшие сроки и в лучшем виде через суд! Огромное спасибо!
-						p.reviews-name Вишняков Валентин Александрович
-					.reviews-item
-						p Хочу поблагодарить Дмитрия за оказание квалифицированной юридической помощи в сложном бракоразводном процессе, в результате судебного разбирательства ребенок остался со мной, а мужа обязали платить алименты.
-						p.reviews-name Кондратенко Евгения
-					.reviews-item
-						p Большое спасибо Соловьеву Дмитрию за добросовестно проделанную работу в решении наследственного вопроса. Очень ответственный и грамотный адвокат, который вникает в дело, и находит решения на всех этапах!
-						p.reviews-name Светлана Игоревна
-					.reviews-item
-						p Благодаря помощи адвоката Соловьева Дмитрия Игоревича, нам с мужем удалось в судебном порядке повысить военную пенсию на целых 20%. От лица нашей семьи хочу выразить Вам благодарность.
-						p.reviews-name Игнатова Екатерина Олеговна
-		section.call-section
-			.container
-				.services_head
-					h2.h2 ЗВОНИТЕ ПРЯМО СЕЙЧАС!
-				a(href="tel:+380935299116").call-button +38(093) 529-91-16
-		.call-bg
+section.about-section
+	#about
+	.about.container
+		.services_head
+			h2.h2 ОБО МНЕ
+		.col.col-left
+			img.I-img(src="img/soloviov.jpg", alt="")
+		.col.col-right
+			p Приветствую Вас на моем сайте, если у Вас возникли вопросы юридического характера, в которых требуется помощь адвоката или юриста, Вы можете обратиться ко мне для получения консультации. У меня индивидуальный подход к каждому клиенту и я всегда нацелен только на положительный результат, обращайтесь ко мне и останетесь довольны.
+			b Стоимость оказания правовой помощи зависит от сложности и возможной продолжительности дела, объема предстоящей работы. Связаться со мной можно по Телефону или по Email в разделе Контакты.
+			img.I-img.diplom(src="https://advokat-soloviov.com.ua/images/2017/07/01/002.jpg", alt="")
 
-		section.contact-section
-			#contact
-			.container
-				.services_head
-					h2.h2 КОНТАКТЫ
-			a.contact-mini-item(href="#") Офис: г. Одесса, улица Базарная, 85
-			a.contact-mini-item(href="tel:+380935299116")
-				include ../src/phone.html
-				| +38(093) 529-91-16
-			a.contact-mini-item(href="mailto:advokat.soloviov@gmail.com")
-				include ../src/mail.html
-				| advokat.soloviov@gmail.com
-			.contact-soc-wrap
-				a.contact-mini-item.facebook(href="https://www.facebook.com/profile.php?id=100021842880966") Facebook
-				a.contact-mini-item.youtube(href="https://www.youtube.com/channel/UCVG3-hESyVPSVU6gydTPDGw?view_as=subscriber")
-					include ../src/youtube.html
+section.advant-section
+	.advant.container
+		.services_head
+			h2.h2 ПРЕИМУЩЕСТВА РАБОТЫ СО МНОЙ
+		.col.col-left
+			img.I-img(src="https://advokat-soloviov.com.ua/images/2017/07/01/property-settlement.jpg", alt="")
+		.col.col-right 
+			.list-icon
+				.col-icon
+					include ../src/info.html
+				.advant-text
+					h3.h3 Честность
+					p Я реально оценю ситуацию и перспективы решения вашей проблемы и буду работать исключительно с целью выиграть дело в суде или добиться иного положительного результата.
+			.list-icon
+				.col-icon
+					include ../src/info.html
+				.advant-text
+					h3.h3 Компетентность
+					p Я оказываю правовую помощь лишь в тех областях, в которых имею значительный опыт и накопленные знания.
+			.list-icon
+				.col-icon
+					include ../src/info.html
+				.advant-text
+					h3.h3 Доступность
+					p Я оказываю адвокатские услуги в Одессе по вполне доступным ценам. При этом, юридические услуги могут быть оплачены в различной форме. Предусмотрена как оплата за отдельные действия, так и единоразовая оплата.
 
-		footer
-		script
-			include ../src/script.js
+section.reviews-section
+	#reviews
+	.reviews.container
+		.services_head
+			h2.h2 ВЫИГРАННЫЕ ДЕЛА
+		.reviews-row
+			a(href="https://reyestr.court.gov.ua/Review/92920614" target="_blank").reviews-item
+				.card(style="background-image: url('img/3.jpg');")
+					.card-top
+						span &nbsp;
+			a(href="https://reyestr.court.gov.ua/Review/92920614" target="_blank").reviews-item
+				.card(style="background-image: url('img/paper.jpg');")
+					.card-top
+						span &nbsp;Дело №&nbsp;
+						div &nbsp;420/<br>&nbsp;6412/20
+					p Восстановление разрешения на иммиграцию и вида на жительство
+			a(href="https://reyestr.court.gov.ua/Review/92730623" target="_blank").reviews-item
+				.card(style="background-image: url('img/paper.jpg');")
+					.card-top
+						span Дело №&nbsp;
+						div 521/<br>2738/2012
+					p Кредитный спор, банку отказали во взыскании более 1 миллиона гривен с поручителя
+			a(href="https://reyestr.court.gov.ua/Review/92789860" target="_blank").reviews-item
+				.card(style="background-image: url('img/paper.jpg');")
+					.card-top
+						span Дело №&nbsp;
+						div &nbsp;1519/<br>&nbsp;2738/2012
+					p Отмена запрета на выезд из Украины
+			a(href="https://reyestr.court.gov.ua/Review/88203700" target="_blank").reviews-item
+				.card(style="background-image: url('img/paper.jpg');")
+					.card-top
+						span &nbsp;Дело №&nbsp;
+						div &nbsp;420/<br>&nbsp;1130/20
+					p Повышение военной пенсии с 70% до 90% денежного обеспечения
+			a(href="https://reyestr.court.gov.ua/Review/87227087" target="_blank").reviews-item
+				.card(style="background-image: url('img/paper.jpg');")
+					.card-top
+						span Дело №&nbsp;
+						div &nbsp;520/<br>7090/19
+					p Выселение
+			a(href="https://reyestr.court.gov.ua/Review/91612390" target="_blank").reviews-item
+				.card(style="background-image: url('img/paper.jpg');")
+					.card-top
+						span Дело №&nbsp;
+						div &nbsp;522/<br>&nbsp;17179/19
+					p Признание лица недееспособным и назначение опекуна
+			a(href="https://reyestr.court.gov.ua/Review/85968018" target="_blank").reviews-item
+				.card(style="background-image: url('img/paper.jpg');")
+					.card-top
+						span Дело №&nbsp;
+						div &nbsp;521/<br>&nbsp;15220/19
+					p Установление факта проживания на территории Украины
+
+section.reviews-section
+	#reviews
+	.reviews.container
+		.services_head
+			h2.h2 ОТЗЫВЫ О МОЕЙ РАБОТЕ
+		.reviews-row
+			.reviews-item
+				p Обращался к адвокату Дмитрию по вопросу обжалования незаконной отмены разрешения на иммиграцию Миграционной Службой, все было сделано в кратчайшие сроки и в лучшем виде через суд! Огромное спасибо!
+				p.reviews-name Вишняков Валентин Александрович
+			.reviews-item
+				p Хочу поблагодарить Дмитрия за оказание квалифицированной юридической помощи в сложном бракоразводном процессе, в результате судебного разбирательства ребенок остался со мной, а мужа обязали платить алименты.
+				p.reviews-name Кондратенко Евгения
+			.reviews-item
+				p Большое спасибо Соловьеву Дмитрию за добросовестно проделанную работу в решении наследственного вопроса. Очень ответственный и грамотный адвокат, который вникает в дело, и находит решения на всех этапах!
+				p.reviews-name Светлана Игоревна
+			.reviews-item
+				p Благодаря помощи адвоката Соловьева Дмитрия Игоревича, нам с мужем удалось в судебном порядке повысить военную пенсию на целых 20%. От лица нашей семьи хочу выразить Вам благодарность.
+				p.reviews-name Игнатова Екатерина Олеговна
+script
+	include ../src/swiper.js
+	include ../src/script.js
+
+
+
+include ../src/footer
