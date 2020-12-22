@@ -409,7 +409,8 @@ section {
 #about,
 #reviews,
 #call,
-#contact {
+#contact,
+#examples {
   position: absolute;
   top: -36px;
   z-index: -8;
@@ -433,7 +434,7 @@ header {
   width: 100%;
   width: 100vw;
   box-shadow: 0 3px 3px rgba(0,0,0,0.05);
-  z-index: 4;
+  z-index: 40;
   margin-bottom: 3px;
 }
 .header-container {
@@ -464,6 +465,7 @@ nav {
   line-height: 70px;
   color: #222;
   padding-left: 10px;
+  padding-right: 5px;
   font-weight: 500;
   font-weight: bold;
 }
@@ -497,7 +499,7 @@ nav {
 .fon-menu {
   display: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .header-container {
     height: 50px;
   }
@@ -544,13 +546,10 @@ nav {
     backdrop-filter: blur(1px);
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .burger {
     display: none;
   }
-}
-.mb70or50 {
-  margin-bottom: 70px;
 }
 .contact-mini {
   display: flex;
@@ -564,7 +563,7 @@ nav {
   text-align: center;
   color: #111;
   vertical-align: middle;
-  padding: 16px 22px 16px 0px;
+  padding: 16px 20px 16px 0px;
 }
 .contact-mini-item:hover {
   color: #359;
@@ -587,13 +586,16 @@ nav {
   color: #385898;
   font-size: 18px;
   letter-spacing: -1px;
-  padding: 15px 15px 16px 0px;
+  padding: 15px 20px 16px 0px;
   font-weight: 600;
   font-weight: bold;
   text-decoration: none;
 }
 .youtube {
-  padding: 12px 15px 12px 0px;
+  padding: 12px 20px 12px 0px;
+}
+.mb70or50 {
+  margin-bottom: 70px;
 }
 @media (max-width: 470px) {
   .contact-mini {
@@ -614,7 +616,7 @@ nav {
     padding: 17px 15px 17px 0px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .mb70or50 {
     margin-bottom: 50px;
   }
@@ -626,9 +628,9 @@ nav {
   height: 600px;
   text-align: center;
   background-color: #777;
-  background-image: url("img/fon1_1920.jpg");
   background-position: center;
   background-size: cover;
+  background-image: url("img/fon1_400.jpg");
 }
 .name_desc-h1 {
   display: flex;
@@ -646,10 +648,11 @@ nav {
 @media (min-width: 200px) {
   .name_desc {
     height: 270px;
+    background-image: url("img/fon1_400.jpg");
   }
   .name_desc-h1 {
-    line-height: 1.45;
-    font-size: 16px;
+    line-height: 1.5;
+    font-size: 17px;
   }
 }
 @media (min-width: 300px) {
@@ -657,16 +660,26 @@ nav {
     height: 320px;
   }
   .name_desc-h1 {
-    line-height: 1.45;
-    font-size: 18px;
+    line-height: 1.55;
+    font-size: 19px;
   }
 }
-@media (min-width: 400px) {
+@media (min-width: 350px) {
+  .name_desc {
+    height: 320px;
+    background-image: url("img/fon1_600.jpg");
+  }
+  .name_desc-h1 {
+    line-height: 1.6;
+    font-size: 22px;
+  }
+}
+@media (min-width: 410px) {
   .name_desc {
     height: 310px;
   }
   .name_desc-h1 {
-    font-size: 24px;
+    font-size: 26px;
   }
 }
 @media (min-width: 480px) {
@@ -674,7 +687,7 @@ nav {
     height: 340px;
   }
   .name_desc-h1 {
-    font-size: 28px;
+    font-size: 30px;
   }
 }
 @media (min-width: 576px) {
@@ -688,6 +701,7 @@ nav {
 @media (min-width: 600px) {
   .name_desc {
     height: 410px;
+    background-image: url("img/fon1_1000.jpg");
   }
 }
 @media (min-width: 676px) {
@@ -716,6 +730,7 @@ nav {
 @media (min-width: 992px) {
   .name_desc {
     height: 540px;
+    background-image: url("img/fon1_1920.jpg");
   }
   .name_desc-h1 {
     line-height: 1.3;
@@ -745,6 +760,7 @@ nav {
   text-decoration: none;
   color: #3d449a;
   font-weight: bold;
+  font-size: 20px;
   padding: 8px;
   margin: 2px;
   width: 100%;
@@ -824,7 +840,7 @@ nav {
   .h2 {
     padding: 8px 10px 8px 10px;
     margin: 0 auto;
-    font-size: 18px;
+    font-size: 22px;
     line-height: 26px;
   }
 }
@@ -832,7 +848,7 @@ nav {
   .h2 {
     padding: 10px 15px 10px 15px;
     margin: 2px auto;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 28px;
   }
 }
@@ -840,7 +856,7 @@ nav {
   .h2 {
     padding: 12px 18px 12px 18px;
     margin: 4px auto;
-    font-size: 22px;
+    font-size: 26px;
     line-height: 32px;
   }
 }
@@ -848,33 +864,34 @@ nav {
   .h2 {
     padding: 14px 20px 14px 20px;
     margin: 6px auto;
-    font-size: 22px;
+    font-size: 28px;
   }
 }
 @media (min-width: 768px) {
   .h2 {
     padding: 16px 25px 16px 25px;
     margin: 8px auto;
-    font-size: 24px;
+    font-size: 30px;
   }
 }
 @media (min-width: 1200px) {
   .h2 {
     padding: 20px 30px 20px 30px;
     margin: 10px auto;
-    font-size: 26px;
+    font-size: 34px;
     font-weight: 700;
   }
 }
 .about-section,
 .contact-section,
-.reviews-section {
+.examples-section {
   background-color: #f2f2f2;
 }
 .contact-mini,
 .advant-section,
 .services-bg,
-header {
+header,
+.reviews-section {
   background-color: #fcfcfc;
 }
 .about,
@@ -932,6 +949,42 @@ header {
     margin-bottom: 15px;
   }
 }
+.card {
+  width: 250px;
+  height: 300px;
+  margin: auto;
+  padding: 30px;
+  box-sizing: border-box;
+  color: #111;
+  text-decoration: none;
+  background-color: #ffd480;
+  background-position: center;
+  background-size: cover;
+}
+.card-top {
+  display: block;
+  margin-top: 0px;
+  margin-bottom: 40px;
+  font-size: 18px;
+  text-decoration: none;
+  text-align: center;
+}
+.card-top img {
+  height: 40px;
+}
+.card-top span {
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+}
+.card p {
+  text-align: center;
+  text-decoration: underline;
+}
+.slider2,
+.slider1 {
+  padding-bottom: 30px !important;
+}
 .reviews p {
   font-weight: normal;
   font-style: italic;
@@ -940,14 +993,24 @@ header {
 }
 .reviews-row {
   display: flex;
-  flex-wrap: wrap;
-  margin: -15px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.reviews-item- {
+  max-width: 350px;
+  margin: auto;
 }
 .reviews-item {
   width: 100%;
   box-sizing: border-box;
   padding: 15px;
   font-size: 16px;
+  text-decoration: none;
+}
+@media (max-width: 440px) {
+  .reviews-item- {
+    max-width: 70%;
+  }
 }
 @media (max-width: 400px) {
   .reviews-item {
@@ -966,6 +1029,14 @@ p.reviews-name {
 @media (min-width: 1200px) {
   .reviews-item {
     width: 25%;
+  }
+}
+@media (min-width: 1400px) {
+  .swiper-button-prev2 {
+    left: -35px !important;
+  }
+  .swiper-button-next2 {
+    right: -35px !important;
   }
 }
 .call-section {
@@ -1003,7 +1074,8 @@ p.reviews-name {
 .services-bg,
 .advant-section,
 .call-section,
-.contact-section {
+.contact-section,
+.examples-section {
   padding: 15px 0 20px 0;
 }
 .contact-section a {
@@ -1016,6 +1088,45 @@ p.reviews-name {
   display: flex;
   justify-content: center;
 }
+.facebook {
+  color: #385898;
+  font-size: 18px;
+  letter-spacing: -1px;
+  padding: 13px 20px 16px 0px;
+  font-weight: 600;
+  font-weight: bold;
+  text-decoration: none;
+}
+.youtube {
+  padding: 10px 20px 12px 0px;
+}
+.TikTok {
+  padding: 10px 20px 10px 0px;
+}
+.TikTok img {
+  height: 19px;
+}
+.TikTok span {
+  padding-left: 3px;
+}
+.inst {
+  padding: 13px 20px 3px 0px;
+}
+.inst img {
+  height: 24px;
+}
+.Telegram {
+  padding: 12px 20px 5px 0px;
+}
+.Telegram img {
+  display: inline-block;
+  margin-bottom: -2px;
+  height: 19px;
+}
+.Telegram span {
+  font-size: 17px;
+  padding-left: 3px;
+}
 @media (max-width: 400px) {
   .contact-section a {
     font-size: 16px;
@@ -1027,7 +1138,8 @@ p.reviews-name {
   .services-bg,
   .advant-section,
   .call-section,
-  .contact-section {
+  .contact-section,
+  .examples-section {
     padding: 15px 0 20px 0;
   }
 }
@@ -1037,7 +1149,8 @@ p.reviews-name {
   .services-bg,
   .advant-section,
   .call-section,
-  .contact-section {
+  .contact-section,
+  .examples-section {
     padding: 18px 0 25px 0;
   }
 }
@@ -1047,7 +1160,8 @@ p.reviews-name {
   .services-bg,
   .advant-section,
   .call-section,
-  .contact-section {
+  .contact-section,
+  .examples-section {
     padding: 20px 0 30px 0;
   }
 }
@@ -1067,7 +1181,7 @@ footer {
   height: 40px;
   background-color: #3d449a;
 }
-</style><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>Document2</title></head><body><header><div class="fon-menu"></div><div class="container header-container" style="position: static;"><img class="logo" src="img/logosite1.png" alt=""/><nav><a class="menu-item" href="/index.html#top">Главная</a><a class="menu-item" href="/index.html#services">Услуги</a><a class="menu-item" href="/index.html#about">Обо мне</a><a class="menu-item" href="/index.html#reviews">Отзывы</a><a class="menu-item" href="#contact">Контакты</a><a class="menu-item" href="#">Блог</a><div class="burger"><div class="burger_line"></div><div class="burger_line burger_line-2"></div><div class="burger_line"></div></div></nav></div></header><div class="mb70or50" id="top"></div><section class="contact-mini"><a class="contact-mini-item" href="tel:+380935299116"><?xml class="contact-mini-icon" version="1.0" encoding="iso-8859-1"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg class="contact-mini-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35;" xml:space="preserve"><g><path d="M25.302,0H9.698c-1.3,0-2.364,1.063-2.364,2.364v30.271C7.334,33.936,8.398,35,9.698,35h15.604c1.3,0,2.364-1.062,2.364-2.364V2.364C27.666,1.063,26.602,0,25.302,0z M15.004,1.704h4.992c0.158,0,0.286,0.128,0.286,0.287c0,0.158-0.128,0.286-0.286,0.286h-4.992c-0.158,0-0.286-0.128-0.286-0.286C14.718,1.832,14.846,1.704,15.004,1.704z M17.5,33.818c-0.653,0-1.182-0.529-1.182-1.183s0.529-1.182,1.182-1.182s1.182,0.528,1.182,1.182S18.153,33.818,17.5,33.818z M26.021,30.625H8.979V3.749h17.042V30.625z"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>+38(093) 529-91-16</a><a class="contact-mini-item contact-mini-item--mail" href="mailto:advokat.soloviov@gmail.com"><?xml class="contact-mini-icon" version="1.0" encoding="iso-8859-1"?><svg class="contact-mini-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><g><path d="M10.688,95.156C80.958,154.667,204.26,259.365,240.5,292.01c4.865,4.406,10.083,6.646,15.5,6.646c5.406,0,10.615-2.219,15.469-6.604c36.271-32.677,159.573-137.385,229.844-196.896c4.375-3.698,5.042-10.198,1.5-14.719C494.625,69.99,482.417,64,469.333,64H42.667c-13.083,0-25.292,5.99-33.479,16.438C5.646,84.958,6.313,91.458,10.688,95.156z"/><path d="M505.813,127.406c-3.781-1.76-8.229-1.146-11.375,1.542C416.51,195.01,317.052,279.688,285.76,307.885c-17.563,15.854-41.938,15.854-59.542-0.021c-33.354-30.052-145.042-125-208.656-178.917c-3.167-2.688-7.625-3.281-11.375-1.542C2.417,129.156,0,132.927,0,137.083v268.25C0,428.865,19.135,448,42.667,448h426.667C492.865,448,512,428.865,512,405.333v-268.25C512,132.927,509.583,129.146,505.813,127.406z"/></g></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>advokat.soloviov@gmail.com</a><div class="contact-soc-wrap"><a class="contact-mini-item facebook" href="https://www.facebook.com/profile.php?id=100021842880966" target="_blank">Facebook</a><a class="contact-mini-item youtube" href="https://www.youtube.com/channel/UCVG3-hESyVPSVU6gydTPDGw?view_as=subscriber" target="_blank"><svg viewBox="0 0 200 60" preserveAspectRatio="xMidYMid meet" focusable="false" style="pointer-events: none; height: 24px;"><g viewBox="0 0 200 60" preserveAspectRatio="xMidYMid meet" class="style-scope ytd-topbar-logo-renderer">
+</style><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>Document2</title></head><body><header><div class="fon-menu"></div><div class="container header-container" style="position: static;"><img class="logo" src="img/logosite1.png" alt=""/><nav><a class="menu-item" href="/index.html#top">Главная</a><a class="menu-item" href="/index.html#services">Услуги</a><a class="menu-item" href="/index.html#about">Обо мне</a><a class="menu-item" href="/index.html#examples">Примеры выигранных дел</a><a class="menu-item" href="/index.html#reviews">Отзывы</a><a class="menu-item" href="#contact">Контакты</a><a class="menu-item" href="#">Блог</a><div class="burger"><div class="burger_line"></div><div class="burger_line burger_line-2"></div><div class="burger_line"></div></div></nav></div></header><div class="mb70or50" id="top"></div><section class="contact-mini"><a class="contact-mini-item" href="tel:+380935299116"><?xml class="contact-mini-icon" version="1.0" encoding="iso-8859-1"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg class="contact-mini-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35;" xml:space="preserve"><g><path d="M25.302,0H9.698c-1.3,0-2.364,1.063-2.364,2.364v30.271C7.334,33.936,8.398,35,9.698,35h15.604c1.3,0,2.364-1.062,2.364-2.364V2.364C27.666,1.063,26.602,0,25.302,0z M15.004,1.704h4.992c0.158,0,0.286,0.128,0.286,0.287c0,0.158-0.128,0.286-0.286,0.286h-4.992c-0.158,0-0.286-0.128-0.286-0.286C14.718,1.832,14.846,1.704,15.004,1.704z M17.5,33.818c-0.653,0-1.182-0.529-1.182-1.183s0.529-1.182,1.182-1.182s1.182,0.528,1.182,1.182S18.153,33.818,17.5,33.818z M26.021,30.625H8.979V3.749h17.042V30.625z"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>+38(093) 529-91-16</a><a class="contact-mini-item contact-mini-item--mail" href="mailto:advokat.soloviov@gmail.com"><?xml class="contact-mini-icon" version="1.0" encoding="iso-8859-1"?><svg class="contact-mini-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><g><path d="M10.688,95.156C80.958,154.667,204.26,259.365,240.5,292.01c4.865,4.406,10.083,6.646,15.5,6.646c5.406,0,10.615-2.219,15.469-6.604c36.271-32.677,159.573-137.385,229.844-196.896c4.375-3.698,5.042-10.198,1.5-14.719C494.625,69.99,482.417,64,469.333,64H42.667c-13.083,0-25.292,5.99-33.479,16.438C5.646,84.958,6.313,91.458,10.688,95.156z"/><path d="M505.813,127.406c-3.781-1.76-8.229-1.146-11.375,1.542C416.51,195.01,317.052,279.688,285.76,307.885c-17.563,15.854-41.938,15.854-59.542-0.021c-33.354-30.052-145.042-125-208.656-178.917c-3.167-2.688-7.625-3.281-11.375-1.542C2.417,129.156,0,132.927,0,137.083v268.25C0,428.865,19.135,448,42.667,448h426.667C492.865,448,512,428.865,512,405.333v-268.25C512,132.927,509.583,129.146,505.813,127.406z"/></g></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>advokat.soloviov@gmail.com</a></section></body></html><section class="advant-section"><div class="container"><div class="services_head"><h1 class="h2">Миграционные услуги</h1></div><img class="img-big" src="img/migration-services.jpg" alt="Миграционные услуги"/><p> <strong>Виды предоставляемых миграционных услуг:</strong></p><ul><li>Обжалование решений Миграционной Службы (отмена разрешения на иммиграцию, отказ в получении ВНЖ, отказ в получении паспорта-книжки, депортация);</li><li>Восстановление аннулированного (недействительного) или отмененного разрешения на иммиграцию, ВНЖ или недействительного паспорта через суд;</li><li>Установление факта проживания или рождения на территории Украины;</li><li>Временный вид на жительство;</li><li>Постоянный вид на жительство;</li><li>Гражданство;</li><li>Подтверждение гражданства ребенка;</li><li>Получение идентификационного кода;</li><li>Другие миграционные услуги.</li></ul><p><strong>Процедура получения вида на жительство в Одессе непростая, а сбор всех необходимых документов может занять длительное время. Не редко процесс рассмотрения документов затягивается, после чего в выдаче вида отказывают по различным основаниям. Чтобы сэкономить время и деньги будет не лишним обратиться к грамотному адвокату по миграционным делам.</strong></p></div></section><section class="call-section"><div class="container"><div class="services_head"><h2 class="h2">ЗВОНИТЕ ПРЯМО СЕЙЧАС!</h2></div><a class="call-button" href="tel:+380935299116">+38(093) 529-91-16</a></div></section><div class="call-bg"></div><section class="contact-section"><div id="contact"></div><div class="container"><div class="services_head"><h2 class="h2">КОНТАКТЫ</h2></div></div><a class="contact-mini-item" href="#">Офис: г. Одесса, улица Базарная, 85</a><a class="contact-mini-item" href="tel:+380935299116"><?xml class="contact-mini-icon" version="1.0" encoding="iso-8859-1"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg class="contact-mini-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35;" xml:space="preserve"><g><path d="M25.302,0H9.698c-1.3,0-2.364,1.063-2.364,2.364v30.271C7.334,33.936,8.398,35,9.698,35h15.604c1.3,0,2.364-1.062,2.364-2.364V2.364C27.666,1.063,26.602,0,25.302,0z M15.004,1.704h4.992c0.158,0,0.286,0.128,0.286,0.287c0,0.158-0.128,0.286-0.286,0.286h-4.992c-0.158,0-0.286-0.128-0.286-0.286C14.718,1.832,14.846,1.704,15.004,1.704z M17.5,33.818c-0.653,0-1.182-0.529-1.182-1.183s0.529-1.182,1.182-1.182s1.182,0.528,1.182,1.182S18.153,33.818,17.5,33.818z M26.021,30.625H8.979V3.749h17.042V30.625z"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>+38(093) 529-91-16</a><a class="contact-mini-item" href="mailto:advokat.soloviov@gmail.com"><?xml class="contact-mini-icon" version="1.0" encoding="iso-8859-1"?><svg class="contact-mini-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><g><path d="M10.688,95.156C80.958,154.667,204.26,259.365,240.5,292.01c4.865,4.406,10.083,6.646,15.5,6.646c5.406,0,10.615-2.219,15.469-6.604c36.271-32.677,159.573-137.385,229.844-196.896c4.375-3.698,5.042-10.198,1.5-14.719C494.625,69.99,482.417,64,469.333,64H42.667c-13.083,0-25.292,5.99-33.479,16.438C5.646,84.958,6.313,91.458,10.688,95.156z"/><path d="M505.813,127.406c-3.781-1.76-8.229-1.146-11.375,1.542C416.51,195.01,317.052,279.688,285.76,307.885c-17.563,15.854-41.938,15.854-59.542-0.021c-33.354-30.052-145.042-125-208.656-178.917c-3.167-2.688-7.625-3.281-11.375-1.542C2.417,129.156,0,132.927,0,137.083v268.25C0,428.865,19.135,448,42.667,448h426.667C492.865,448,512,428.865,512,405.333v-268.25C512,132.927,509.583,129.146,505.813,127.406z"/></g></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>advokat.soloviov@gmail.com</a><div class="contact-soc-wrap"><a class="contact-mini-item facebook" href="https://www.facebook.com/profile.php?id=100021842880966" target="_blank">Facebook</a><a class="contact-mini-item youtube" href="https://www.youtube.com/channel/UCVG3-hESyVPSVU6gydTPDGw?view_as=subscriber" target="_blank"><svg viewBox="0 0 200 60" preserveAspectRatio="xMidYMid meet" focusable="false" style="pointer-events: none; height: 24px;"><g viewBox="0 0 200 60" preserveAspectRatio="xMidYMid meet" class="style-scope ytd-topbar-logo-renderer">
     <g>
       <path fill="#FF0000" d="M63,14.87c-0.72-2.7-2.85-4.83-5.56-5.56C52.54,8,32.88,8,32.88,8S13.23,8,8.32,9.31
         c-2.7,0.72-4.83,2.85-5.56,5.56C1.45,19.77,1.45,30,1.45,30s0,10.23,1.31,15.13c0.72,2.7,2.85,4.83,5.56,5.56
@@ -1108,48 +1222,7 @@ footer {
           c0.13,1.17,0.2,2.83,0.2,4.99V36.93z" class="style-scope ytd-topbar-logo-renderer"></path>
       </g>
     </g>
-  </g></svg></a></div></section></body></html><section class="advant-section"><div class="container"><div class="services_head"><h1 class="h2">Миграционные услуги</h1></div><img class="img-big" src="img/migration-services.jpg" alt="Миграционные услуги"/><p> <strong>Виды предоставляемых миграционных услуг:</strong></p><ul><li>Обжалование решений Миграционной Службы (отмена разрешения на иммиграцию, отказ в получении ВНЖ, отказ в получении паспорта-книжки, депортация);</li><li>Восстановление аннулированного (недействительного) или отмененного разрешения на иммиграцию, ВНЖ или недействительного паспорта через суд;</li><li>Установление факта проживания или рождения на территории Украины;</li><li>Временный вид на жительство;</li><li>Постоянный вид на жительство;</li><li>Гражданство;</li><li>Подтверждение гражданства ребенка;</li><li>Получение идентификационного кода;</li><li>Другие миграционные услуги.</li></ul><p><strong>Вид на жительство в Украине</strong> – это документ, который удостоверяет личность иностранца или лица без гражданства, а также подтверждает право на временное проживание на территории Украины.</p><p> <strong>Зачем получать вид на жительство в Украине?</strong></p><p>Согласно законодательству Украины, иностранный гражданин может пребывать на территории Украины только в период действия полученной им визы или в течение 90 дней со дня въезда на Украину, если для него предусмотрен безвизовый режим (Россия, Беларусь и т.д.). Для того, чтобы законно проживать на территории Украины более указанного срока иностранец должен получить соответствующий документ, который называется «Вид на жительство». В противном случае иностранный гражданин обязан выехать с территории Украины.</p><p><strong>Основание для получения ВНЖ в Украине:</strong></p><ul><li>Воссоединение с семьей. Временный вид на жительство в Одессе имеют право получить иностранцы, член семьи которых, является гражданином Украины, или иностранцы, которые вступили в брак с гражданином Украины. Кроме того, временный вид на жительство имеют право получить иностранцы, член семьи которых уже имеет постоянный либо временный вид на жительство в г. Одесса или другом городе Украины.</li></ul><p><strong>Процедура получения вида на жительство в Одессе непростая, а сбор всех необходимых документов может занять длительное время. Не редко процесс рассмотрения документов затягивается, после чего в выдаче вида отказывают по различным основаниям. Чтобы сэкономить время и деньги будет не лишним обратиться к грамотному адвокату по миграционным делам.</strong></p></div></section><section class="call-section"><div class="container"><div class="services_head"><h2 class="h2">ЗВОНИТЕ ПРЯМО СЕЙЧАС!</h2></div><a class="call-button" href="tel:+380935299116">+38(093) 529-91-16</a></div></section><div class="call-bg"></div><section class="contact-section"><div id="contact"></div><div class="container"><div class="services_head"><h2 class="h2">КОНТАКТЫ</h2></div></div><a class="contact-mini-item" href="#">Офис: г. Одесса, улица Базарная, 85</a><a class="contact-mini-item" href="tel:+380935299116"><?xml class="contact-mini-icon" version="1.0" encoding="iso-8859-1"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg class="contact-mini-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35;" xml:space="preserve"><g><path d="M25.302,0H9.698c-1.3,0-2.364,1.063-2.364,2.364v30.271C7.334,33.936,8.398,35,9.698,35h15.604c1.3,0,2.364-1.062,2.364-2.364V2.364C27.666,1.063,26.602,0,25.302,0z M15.004,1.704h4.992c0.158,0,0.286,0.128,0.286,0.287c0,0.158-0.128,0.286-0.286,0.286h-4.992c-0.158,0-0.286-0.128-0.286-0.286C14.718,1.832,14.846,1.704,15.004,1.704z M17.5,33.818c-0.653,0-1.182-0.529-1.182-1.183s0.529-1.182,1.182-1.182s1.182,0.528,1.182,1.182S18.153,33.818,17.5,33.818z M26.021,30.625H8.979V3.749h17.042V30.625z"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>+38(093) 529-91-16</a><a class="contact-mini-item" href="mailto:advokat.soloviov@gmail.com"><?xml class="contact-mini-icon" version="1.0" encoding="iso-8859-1"?><svg class="contact-mini-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><g><path d="M10.688,95.156C80.958,154.667,204.26,259.365,240.5,292.01c4.865,4.406,10.083,6.646,15.5,6.646c5.406,0,10.615-2.219,15.469-6.604c36.271-32.677,159.573-137.385,229.844-196.896c4.375-3.698,5.042-10.198,1.5-14.719C494.625,69.99,482.417,64,469.333,64H42.667c-13.083,0-25.292,5.99-33.479,16.438C5.646,84.958,6.313,91.458,10.688,95.156z"/><path d="M505.813,127.406c-3.781-1.76-8.229-1.146-11.375,1.542C416.51,195.01,317.052,279.688,285.76,307.885c-17.563,15.854-41.938,15.854-59.542-0.021c-33.354-30.052-145.042-125-208.656-178.917c-3.167-2.688-7.625-3.281-11.375-1.542C2.417,129.156,0,132.927,0,137.083v268.25C0,428.865,19.135,448,42.667,448h426.667C492.865,448,512,428.865,512,405.333v-268.25C512,132.927,509.583,129.146,505.813,127.406z"/></g></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>advokat.soloviov@gmail.com</a><div class="contact-soc-wrap"><a class="contact-mini-item facebook" href="https://www.facebook.com/profile.php?id=100021842880966" target="_blank">Facebook</a><a class="contact-mini-item youtube" href="https://www.youtube.com/channel/UCVG3-hESyVPSVU6gydTPDGw?view_as=subscriber" target="_blank"><svg viewBox="0 0 200 60" preserveAspectRatio="xMidYMid meet" focusable="false" style="pointer-events: none; height: 24px;"><g viewBox="0 0 200 60" preserveAspectRatio="xMidYMid meet" class="style-scope ytd-topbar-logo-renderer">
-    <g>
-      <path fill="#FF0000" d="M63,14.87c-0.72-2.7-2.85-4.83-5.56-5.56C52.54,8,32.88,8,32.88,8S13.23,8,8.32,9.31
-        c-2.7,0.72-4.83,2.85-5.56,5.56C1.45,19.77,1.45,30,1.45,30s0,10.23,1.31,15.13c0.72,2.7,2.85,4.83,5.56,5.56
-        C13.23,52,32.88,52,32.88,52s19.66,0,24.56-1.31c2.7-0.72,4.83-2.85,5.56-5.56C64.31,40.23,64.31,30,64.31,30
-        S64.31,19.77,63,14.87z" class="style-scope ytd-topbar-logo-renderer"></path>
-      <polygon fill="#FFFFFF" points="26.6,39.43 42.93,30 26.6,20.57"></polygon>
-    </g>
-    <g class="style-scope ytd-topbar-logo-renderer">
-      <g id="youtube-paths" class="style-scope ytd-topbar-logo-renderer">
-        <path fill="#282828" d="M92.69,48.03c-1.24-0.84-2.13-2.14-2.65-3.91c-0.52-1.77-0.79-4.12-0.79-7.06v-4
-          c0-2.97,0.3-5.35,0.9-7.15c0.6-1.8,1.54-3.11,2.81-3.93c1.27-0.82,2.94-1.24,5.01-1.24c2.04,0,3.67,0.42,4.9,1.26
-          c1.23,0.84,2.13,2.15,2.7,3.93c0.57,1.78,0.85,4.16,0.85,7.12v4c0,2.94-0.28,5.3-0.83,7.08c-0.55,1.78-1.45,3.09-2.7,3.91
-          c-1.24,0.82-2.93,1.24-5.06,1.24C95.65,49.29,93.93,48.87,92.69,48.03z M99.66,43.71c0.34-0.9,0.52-2.37,0.52-4.4v-8.59
-          c0-1.98-0.17-3.42-0.52-4.34c-0.34-0.91-0.95-1.37-1.82-1.37c-0.84,0-1.43,0.46-1.78,1.37c-0.34,0.91-0.52,2.36-0.52,4.34v8.59
-          c0,2.04,0.16,3.51,0.49,4.4c0.33,0.9,0.93,1.35,1.8,1.35C98.71,45.06,99.31,44.61,99.66,43.71z" class="style-scope ytd-topbar-logo-renderer"></path>
-        <path fill="#282828" d="M188.16,37.13v1.39c0,1.77,0.05,3.09,0.16,3.98c0.1,0.88,0.32,1.53,0.65,1.93
-          c0.33,0.4,0.84,0.61,1.53,0.61c0.93,0,1.57-0.36,1.91-1.08c0.34-0.72,0.53-1.92,0.56-3.6l5.35,0.31
-          c0.03,0.24,0.04,0.57,0.04,0.99c0,2.55-0.7,4.45-2.09,5.71c-1.39,1.26-3.36,1.89-5.91,1.89c-3.06,0-5.2-0.96-6.43-2.88
-          c-1.23-1.92-1.84-4.88-1.84-8.9v-4.81c0-4.14,0.64-7.15,1.91-9.06c1.27-1.9,3.45-2.85,6.54-2.85c2.13,0,3.76,0.39,4.9,1.17
-          c1.14,0.78,1.94,1.99,2.41,3.64c0.46,1.65,0.7,3.93,0.7,6.83v4.72H188.16z M188.95,25.53c-0.31,0.39-0.52,1.03-0.63,1.91
-          c-0.11,0.88-0.16,2.23-0.16,4.02v1.98h4.54v-1.98c0-1.77-0.06-3.11-0.18-4.02c-0.12-0.91-0.34-1.56-0.65-1.93
-          c-0.31-0.37-0.8-0.56-1.46-0.56C189.75,24.94,189.26,25.14,188.95,25.53z" class="style-scope ytd-topbar-logo-renderer"></path>
-        <path fill="#282828" d="M77.59,36.61l-7.06-25.49h6.16l2.47,11.55c0.63,2.85,1.09,5.27,1.39,7.28h0.18
-          c0.21-1.44,0.67-3.85,1.39-7.24l2.56-11.6h6.16L83.7,36.61v12.23h-6.11V36.61z" class="style-scope ytd-topbar-logo-renderer"></path>
-        <path fill="#282828" d="M126.45,21.28v27.55h-4.85l-0.54-3.37h-0.13c-1.32,2.55-3.3,3.82-5.93,3.82c-1.83,0-3.18-0.6-4.05-1.8
-          c-0.87-1.2-1.3-3.07-1.3-5.62V21.28h6.2v20.23c0,1.23,0.13,2.11,0.4,2.63c0.27,0.52,0.72,0.79,1.35,0.79
-          c0.54,0,1.06-0.16,1.55-0.49c0.49-0.33,0.86-0.75,1.1-1.26V21.28H126.45z" class="style-scope ytd-topbar-logo-renderer"></path>
-        <path fill="#282828" d="M158.27,21.28v27.55h-4.85l-0.54-3.37h-0.13c-1.32,2.55-3.3,3.82-5.93,3.82c-1.83,0-3.18-0.6-4.05-1.8
-          c-0.87-1.2-1.3-3.07-1.3-5.62V21.28h6.2v20.23c0,1.23,0.13,2.11,0.4,2.63c0.27,0.52,0.72,0.79,1.35,0.79
-          c0.54,0,1.06-0.16,1.55-0.49c0.49-0.33,0.86-0.75,1.1-1.26V21.28H158.27z" class="style-scope ytd-topbar-logo-renderer"></path>
-        <path fill="#282828" d="M143.31,16.11h-6.16v32.72h-6.07V16.11h-6.16v-4.99h18.38V16.11z" class="style-scope ytd-topbar-logo-renderer"></path>
-        <path fill="#282828" d="M178.8,25.69c-0.38-1.74-0.98-3-1.82-3.78c-0.84-0.78-1.99-1.17-3.46-1.17c-1.14,0-2.2,0.32-3.19,0.97
-          c-0.99,0.64-1.75,1.49-2.29,2.54h-0.05l0-14.52h-5.98v39.11h5.12l0.63-2.61h0.13c0.48,0.93,1.2,1.66,2.16,2.2
-          c0.96,0.54,2.02,0.81,3.19,0.81c2.1,0,3.64-0.97,4.63-2.9c0.99-1.93,1.48-4.95,1.48-9.06v-4.36
-          C179.36,29.84,179.17,27.43,178.8,25.69z M173.11,36.93c0,2.01-0.08,3.58-0.25,4.72c-0.16,1.14-0.44,1.95-0.83,2.43
-          c-0.39,0.48-0.91,0.72-1.57,0.72c-0.51,0-0.98-0.12-1.42-0.36c-0.43-0.24-0.79-0.6-1.06-1.08V27.71
-          c0.21-0.75,0.57-1.36,1.08-1.84c0.51-0.48,1.06-0.72,1.66-0.72c0.63,0,1.12,0.25,1.46,0.74c0.34,0.49,0.58,1.33,0.72,2.49
-          c0.13,1.17,0.2,2.83,0.2,4.99V36.93z" class="style-scope ytd-topbar-logo-renderer"></path>
-      </g>
-    </g>
-  </g></svg></a></div></section><footer></footer><script>
+  </g></svg></a><a class="contact-mini-item TikTok" href="https://www.tiktok.com/@lawyersolo" target="_blank"><img src="img/logo-TikTok.png" alt="alt"/><span>Tik Tok</span></a><a class="contact-mini-item inst" href="https://www.instagram.com/lawyer_solo_odessa/" target="_blank"><img src="img/Logo-inst.png" alt="alt"/></a><a class="contact-mini-item Telegram" href="https://t.me/lawyersolo" target="_blank"><img src="img/t_logo.png" alt="alt"/><span>Telegram</span></a></div></section><footer></footer><script>
 document.getElementsByClassName("burger")[0].onclick = function(){togleDropMenu()};
 var menu_items = document.getElementsByClassName("menu-item")
 document.getElementsByClassName("fon-menu")[0].onclick = function(){togleDropMenu()};
@@ -1162,4 +1235,81 @@ function removeDropMenu() {
 };
 function togleDropMenu() {
     document.getElementsByTagName("header")[0].classList.toggle("menu-open");
-};</script>
+};
+
+
+window.addEventListener('DOMContentLoaded', function () {
+  var about = document.getElementsByClassName("about-section")[0];
+window.addEventListener('scroll', function () {
+  // about.offsetTop
+  // about.offsetHeight
+  // window.scrollY;
+  if (window.scrollY > about.offsetTop - about.offsetHeight) {
+   console.log(window.scrollY);
+  };
+  // console.log();
+})
+
+})
+
+
+var mySwiper = new Swiper('.slider1', {
+    // Optional parameters
+    loop: true,
+  
+    slidesPerView: 4,
+    spaceBetween: 30,
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      199: {
+          slidesPerView: 1
+      },
+      999: {
+          slidesPerView: 2
+      },
+      1400: {
+          slidesPerView: 3
+      }
+  }
+  
+  })
+  
+
+  var mySwiper = new Swiper('.slider2', {
+    // Optional parameters
+    loop: true,
+  
+    slidesPerView: 4,
+    spaceBetween: 30,
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next2',
+      prevEl: '.swiper-button-prev2',
+    },
+    breakpoints: {
+      199: {
+          slidesPerView: 1
+      },
+      999: {
+          slidesPerView: 2
+      },
+      1400: {
+          slidesPerView: 3
+      }
+  }
+  
+  })</script>

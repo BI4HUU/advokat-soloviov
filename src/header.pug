@@ -7,8 +7,26 @@ html(lang="en")
 			include ../build/style.css
 		meta(charset="UTF-8")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
-		title Document2
+		title Адвокат Дмитрий Соловьев | Услуги адвоката в Одессе
+		<!-- Google Tag Manager -->
+		//- <script>!function(e,t,a,n,g){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var m=t.getElementsByTagName(a)[0],r=t.createElement(a);r.async=!0,r.src="https://www.googletagmanager.com/gtm.js?id=GTM-MNF3LWB",m.parentNode.insertBefore(r,m)}(window,document,"script","dataLayer");</script>
+		//- <script async src="https://www.googletagmanager.com/gtag/js?id=G-7M65VN7SMQ"></script>
+		//- <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-7M65VN7SMQ");</script>
+		<!-- End Google Tag Manager -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		//- <base href="https://advokat-soloviov.com.ua/">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name="description" content="Адвокат Дмитрий Соловьев в Одессе. Эффективное решение юридических вопросов от консультации до ведения дела в суде. Индивидуальный подход к каждому клиенту. Решение юридических вопросов любой сложности. Звоните +380935299116">
+		<link href="/images/favic2.png" rel="shortcut icon" type="image/vnd.microsoft.icon">
+		<meta content="website" property="og:type">
+		//- <meta content="https://advokat-soloviov.com.ua/" property="og:url">
+		<meta content="Адвокат Дмитрий Соловьев | Услуги адвоката в Одессе" property="og:title">
+
 	body
+		//- <!-- Google Tag Manager (noscript) -->
+		//- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MNF3LWB" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		//- <!-- End Google Tag Manager (noscript) -->
 		header(class="")
 			.fon-menu
 			.container.header-container(style="position: static;")
@@ -17,6 +35,7 @@ html(lang="en")
 					a(href="/index.html#top").menu-item Главная
 					a(href="/index.html#services").menu-item Услуги
 					a(href="/index.html#about").menu-item Обо мне
+					a(href="/index.html#examples").menu-item Примеры выигранных дел
 					a(href="/index.html#reviews").menu-item Отзывы
 					a(href="#contact").menu-item Контакты
 					a(href="#").menu-item Блог
@@ -32,7 +51,7 @@ html(lang="en")
 			a.contact-mini-item.contact-mini-item--mail(href="mailto:advokat.soloviov@gmail.com")
 				include ../src/mail.html
 				| advokat.soloviov@gmail.com
-			.contact-soc-wrap
-				a.contact-mini-item.facebook(href="https://www.facebook.com/profile.php?id=100021842880966" target="_blank") Facebook
-				a.contact-mini-item.youtube(href="https://www.youtube.com/channel/UCVG3-hESyVPSVU6gydTPDGw?view_as=subscriber" target="_blank")
-					include ../src/youtube.html
+			//- .contact-soc-wrap
+			//- 	a.contact-mini-item.facebook(href="https://www.facebook.com/profile.php?id=100021842880966" target="_blank") Facebook
+			//- 	a.contact-mini-item.youtube(href="https://www.youtube.com/channel/UCVG3-hESyVPSVU6gydTPDGw?view_as=subscriber" target="_blank")
+			//- 		include ../src/youtube.html

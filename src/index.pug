@@ -17,24 +17,24 @@ section.services-bg
 				i.services_icon
 					include ../src/mallet.html
 			a(href="legal-services.html" target="_blank") Юридические консультации
-			a(href="lawyer-in-civil-cases.html" target="_blank") Адвокат по гражданским делам
+			// a(href="lawyer-in-civil-cases.html" target="_blank") Адвокат по гражданским делам
 			a(href="family-disputes.html" target="_blank") Семейные споры
-			a(href="auto-advocat.html" target="_blank") Помощь при ДТП - АвтоАдвокат
 			a(href="housing-disputes.html" target="_blank") Жилищные споры
-			a(href="#") Решение споров по земле и недвижимости
-			a(href="hereditary-disputes.html" target="_blank") Наследственные споры
+			a(href="auto-advocat.html" target="_blank") Помощь при ДТП - АвтоАдвокат
+			// a(href="#") Решение споров по земле и недвижимости
 			a(href="disputes-with-banks.html" target="_blank") Споры с банками и МФО
 		.col.col-right
 			.services_icon_wrap
 				i.services_icon
 					include ../src/courthouse.html
 			a(href="representation-of-interests.html" target="_blank") Представление интересов в суде
-			a(href="criminal-proceedings.html" target="_blank") Адвокат по уголовным делам
+			a(href="criminal-proceedings.html" target="_blank") Уголовные дела
+			a(href="hereditary-disputes.html" target="_blank") Наследственные споры
 			a(href="migration-services.html" target="_blank") Миграционные услуги
 			a(href="recalculation-of-military-pensions.html" target="_blank") Перерасчет военных пенсий
-			a(href="#") Юридическое обслуживание предприятий
-			a(href="#") Подготовка и экспертиза договоров
-			a(href="#") Обжалование незаконных решений и штрафов
+			// a(href="#") Юридическое обслуживание предприятий
+			// a(href="#") Подготовка и экспертиза договоров
+			// a(href="#") Обжалование незаконных решений и штрафов
 
 section.about-section
 	#about
@@ -42,18 +42,18 @@ section.about-section
 		.services_head
 			h2.h2 ОБО МНЕ
 		.col.col-left
-			img.I-img(src="img/soloviov.jpg", alt="")
+			img.I-img(data-src="img/soloviov.jpg", alt="")
 		.col.col-right
 			p Приветствую Вас на моем сайте, если у Вас возникли вопросы юридического характера, в которых требуется помощь адвоката или юриста, Вы можете обратиться ко мне для получения консультации. У меня индивидуальный подход к каждому клиенту и я всегда нацелен только на положительный результат, обращайтесь ко мне и останетесь довольны.
 			b Стоимость оказания правовой помощи зависит от сложности и возможной продолжительности дела, объема предстоящей работы. Связаться со мной можно по Телефону или по Email в разделе Контакты.
-			img.I-img.diplom(src="https://advokat-soloviov.com.ua/images/2017/07/01/002.jpg", alt="")
+			img.I-img.diplom(data-src="img/sertifikat.jpg", alt="")
 
 section.advant-section
 	.advant.container
 		.services_head
 			h2.h2 ПРЕИМУЩЕСТВА РАБОТЫ СО МНОЙ
 		.col.col-left
-			img.I-img(src="https://advokat-soloviov.com.ua/images/2017/07/01/property-settlement.jpg", alt="")
+			img.I-img.advant-img(data-src="img/property.jpg", alt="ПРЕИМУЩЕСТВА РАБОТЫ СО МНОЙ")
 		.col.col-right 
 			.list-icon
 				.col-icon
@@ -74,77 +74,129 @@ section.advant-section
 					h3.h3 Доступность
 					p Я оказываю адвокатские услуги в Одессе по вполне доступным ценам. При этом, юридические услуги могут быть оплачены в различной форме. Предусмотрена как оплата за отдельные действия, так и единоразовая оплата.
 
-section.reviews-section
-	#reviews
+section.examples-section
+	#examples
 	.reviews.container
 		.services_head
-			h2.h2 ВЫИГРАННЫЕ ДЕЛА
-		.reviews-row
-			a(href="https://reyestr.court.gov.ua/Review/92920614" target="_blank").reviews-item
-				.card(style="background-image: url('img/3.jpg');")
-					.card-top
-						span &nbsp;
-			a(href="https://reyestr.court.gov.ua/Review/92920614" target="_blank").reviews-item
-				.card(style="background-image: url('img/paper.jpg');")
-					.card-top
-						span &nbsp;Дело №&nbsp;
-						div &nbsp;420/<br>&nbsp;6412/20
-					p Восстановление разрешения на иммиграцию и вида на жительство
-			a(href="https://reyestr.court.gov.ua/Review/92730623" target="_blank").reviews-item
-				.card(style="background-image: url('img/paper.jpg');")
-					.card-top
-						span Дело №&nbsp;
-						div 521/<br>2738/2012
-					p Кредитный спор, банку отказали во взыскании более 1 миллиона гривен с поручителя
-			a(href="https://reyestr.court.gov.ua/Review/92789860" target="_blank").reviews-item
-				.card(style="background-image: url('img/paper.jpg');")
-					.card-top
-						span Дело №&nbsp;
-						div &nbsp;1519/<br>&nbsp;2738/2012
-					p Отмена запрета на выезд из Украины
-			a(href="https://reyestr.court.gov.ua/Review/88203700" target="_blank").reviews-item
-				.card(style="background-image: url('img/paper.jpg');")
-					.card-top
-						span &nbsp;Дело №&nbsp;
-						div &nbsp;420/<br>&nbsp;1130/20
-					p Повышение военной пенсии с 70% до 90% денежного обеспечения
-			a(href="https://reyestr.court.gov.ua/Review/87227087" target="_blank").reviews-item
-				.card(style="background-image: url('img/paper.jpg');")
-					.card-top
-						span Дело №&nbsp;
-						div &nbsp;520/<br>7090/19
-					p Выселение
-			a(href="https://reyestr.court.gov.ua/Review/91612390" target="_blank").reviews-item
-				.card(style="background-image: url('img/paper.jpg');")
-					.card-top
-						span Дело №&nbsp;
-						div &nbsp;522/<br>&nbsp;17179/19
-					p Признание лица недееспособным и назначение опекуна
-			a(href="https://reyestr.court.gov.ua/Review/85968018" target="_blank").reviews-item
-				.card(style="background-image: url('img/paper.jpg');")
-					.card-top
-						span Дело №&nbsp;
-						div &nbsp;521/<br>&nbsp;15220/19
-					p Установление факта проживания на территории Украины
+			//- h2.h2 ВЫИГРАННЫЕ ДЕЛА
+			h2.h2 ПРИМЕРЫ ВЫИГРАННЫХ ДЕЛ
+		.swiper-container.reviews-row.slider1
+			.swiper-wrapper
+				.swiper-slide
+					a(href="https://reyestr.court.gov.ua/Review/92920614" target="_blank").reviews-item
+						.card.card_img_bg
+							.card-top
+								img.card-img-trident(data-src="img/trident.png", alt="alt")
+								br
+								br
+								span Дело №
+								p 420/6412/20
+							p Восстановление разрешения на иммиграцию и вида на жительство
+				.swiper-slide
+					a(href="https://reyestr.court.gov.ua/Review/92730623" target="_blank").reviews-item
+						.card.card_img_bg
+							.card-top
+								img.card-img-trident(data-src="img/trident.png", alt="alt")
+								br
+								br
+								span Дело №
+								p 521/2738/2012
+							p Кредитный спор, банку отказали во взыскании более 1 миллиона гривен с поручителя
+				.swiper-slide
+					a(href="https://reyestr.court.gov.ua/Review/92789860" target="_blank").reviews-item
+						.card.card_img_bg
+							.card-top
+								img.card-img-trident(data-src="img/trident.png", alt="alt")
+								br
+								br
+								span Дело №
+								p 1519/2738/2012
+							p Отмена запрета на выезд из Украины
+				.swiper-slide
+					a(href="https://reyestr.court.gov.ua/Review/88203700" target="_blank").reviews-item
+						.card.card_img_bg
+							.card-top
+								img.card-img-trident(data-src="img/trident.png", alt="alt")
+								br
+								br
+								span Дело №
+								p 420/1130/20
+							p Повышение военной пенсии с 70% до 90% денежного обеспечения
+				.swiper-slide
+					a(href="https://reyestr.court.gov.ua/Review/87227087" target="_blank").reviews-item
+						.card.card_img_bg
+							.card-top
+								img.card-img-trident(data-src="img/trident.png", alt="alt")
+								br
+								br
+								span Дело №
+								p 520/7090/19
+							p Выселение
+				.swiper-slide
+					a(href="https://reyestr.court.gov.ua/Review/91612390" target="_blank").reviews-item
+						.card.card_img_bg
+							.card-top
+								img.card-img-trident(data-src="img/trident.png", alt="alt")
+								br
+								br
+								span Дело №
+								p 522/17179/19
+							p Признание лица недееспособным и назначение опекуна
+				.swiper-slide
+					a(href="https://reyestr.court.gov.ua/Review/85968018" target="_blank").reviews-item
+						.card.card_img_bg
+							.card-top
+								img.card-img-trident(data-src="img/trident.png", alt="alt")
+								br
+								br
+								span Дело №
+								p 521/15220/19
+							p Установление факта проживания на территории Украины
+			
+			.swiper-pagination 
+
+			.swiper-button-prev
+			.swiper-button-next
 
 section.reviews-section
 	#reviews
 	.reviews.container
 		.services_head
 			h2.h2 ОТЗЫВЫ О МОЕЙ РАБОТЕ
-		.reviews-row
-			.reviews-item
-				p Обращался к адвокату Дмитрию по вопросу обжалования незаконной отмены разрешения на иммиграцию Миграционной Службой, все было сделано в кратчайшие сроки и в лучшем виде через суд! Огромное спасибо!
-				p.reviews-name Вишняков Валентин Александрович
-			.reviews-item
-				p Хочу поблагодарить Дмитрия за оказание квалифицированной юридической помощи в сложном бракоразводном процессе, в результате судебного разбирательства ребенок остался со мной, а мужа обязали платить алименты.
-				p.reviews-name Кондратенко Евгения
-			.reviews-item
-				p Большое спасибо Соловьеву Дмитрию за добросовестно проделанную работу в решении наследственного вопроса. Очень ответственный и грамотный адвокат, который вникает в дело, и находит решения на всех этапах!
-				p.reviews-name Светлана Игоревна
-			.reviews-item
-				p Благодаря помощи адвоката Соловьева Дмитрия Игоревича, нам с мужем удалось в судебном порядке повысить военную пенсию на целых 20%. От лица нашей семьи хочу выразить Вам благодарность.
-				p.reviews-name Игнатова Екатерина Олеговна
+		
+		.swiper-container.reviews-row.slider2
+			.swiper-wrapper
+				.swiper-slide
+					.reviews-item-
+						p Обращался к адвокату Дмитрию по вопросу обжалования незаконной отмены разрешения на иммиграцию Миграционной Службой, все было сделано в кратчайшие сроки и в лучшем виде через суд! Огромное спасибо!
+						.reviews-name
+							img.avatar_img(data-src="img/ava1.jpg", alt="alt")
+							p Вишняков Валентин
+				.swiper-slide
+					.reviews-item-
+						p Хочу поблагодарить Дмитрия за оказание квалифицированной юридической помощи в сложном бракоразводном процессе, в результате судебного разбирательства ребенок остался со мной, а мужа обязали платить алименты.
+						.reviews-name
+							img.avatar_img(data-src="img/ava6.jpg", alt="alt")
+							p Кондратенко Евгения
+				.swiper-slide
+					.reviews-item-
+						p Большое спасибо Соловьеву Дмитрию за добросовестно проделанную работу в решении наследственного вопроса. Очень ответственный и грамотный адвокат, который вникает в дело, и находит решения на всех этапах!
+						.reviews-name
+							img.avatar_img(data-src="img/ava3.jpg", alt="alt")
+							p Светлана Игоревна
+				.swiper-slide
+					.reviews-item-
+						p Благодаря помощи адвоката Соловьева Дмитрия Игоревича, нам с мужем удалось в судебном порядке повысить военную пенсию на целых 20%. От лица нашей семьи хочу выразить Вам благодарность.
+						.reviews-name
+							img.avatar_img(data-src="img/ava4.jpg", alt="alt")
+							p Игнатова Екатерина
+				
+			.swiper-pagination
+
+		.swiper-button-prev.swiper-button-prev2
+		.swiper-button-next.swiper-button-next2
+
+
 script
 	include ../src/swiper.js
 	include ../src/script.js

@@ -409,7 +409,8 @@ section {
 #about,
 #reviews,
 #call,
-#contact {
+#contact,
+#examples {
   position: absolute;
   top: -36px;
   z-index: -8;
@@ -433,7 +434,7 @@ header {
   width: 100%;
   width: 100vw;
   box-shadow: 0 3px 3px rgba(0,0,0,0.05);
-  z-index: 4;
+  z-index: 40;
   margin-bottom: 3px;
 }
 .header-container {
@@ -464,6 +465,7 @@ nav {
   line-height: 70px;
   color: #222;
   padding-left: 10px;
+  padding-right: 5px;
   font-weight: 500;
   font-weight: bold;
 }
@@ -497,7 +499,7 @@ nav {
 .fon-menu {
   display: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .header-container {
     height: 50px;
   }
@@ -544,13 +546,10 @@ nav {
     backdrop-filter: blur(1px);
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .burger {
     display: none;
   }
-}
-.mb70or50 {
-  margin-bottom: 70px;
 }
 .contact-mini {
   display: flex;
@@ -564,7 +563,7 @@ nav {
   text-align: center;
   color: #111;
   vertical-align: middle;
-  padding: 16px 22px 16px 0px;
+  padding: 16px 20px 16px 0px;
 }
 .contact-mini-item:hover {
   color: #359;
@@ -587,13 +586,16 @@ nav {
   color: #385898;
   font-size: 18px;
   letter-spacing: -1px;
-  padding: 15px 15px 16px 0px;
+  padding: 15px 20px 16px 0px;
   font-weight: 600;
   font-weight: bold;
   text-decoration: none;
 }
 .youtube {
-  padding: 12px 15px 12px 0px;
+  padding: 12px 20px 12px 0px;
+}
+.mb70or50 {
+  margin-bottom: 70px;
 }
 @media (max-width: 470px) {
   .contact-mini {
@@ -614,7 +616,7 @@ nav {
     padding: 17px 15px 17px 0px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .mb70or50 {
     margin-bottom: 50px;
   }
@@ -626,9 +628,9 @@ nav {
   height: 600px;
   text-align: center;
   background-color: #777;
-  background-image: url("img/fon1_1920.jpg");
   background-position: center;
   background-size: cover;
+  background-image: url("img/fon1_400.jpg");
 }
 .name_desc-h1 {
   display: flex;
@@ -646,6 +648,7 @@ nav {
 @media (min-width: 200px) {
   .name_desc {
     height: 270px;
+    background-image: url("img/fon1_400.jpg");
   }
   .name_desc-h1 {
     line-height: 1.5;
@@ -658,19 +661,20 @@ nav {
   }
   .name_desc-h1 {
     line-height: 1.55;
-    font-size: 20px;
+    font-size: 19px;
   }
 }
 @media (min-width: 350px) {
   .name_desc {
     height: 320px;
+    background-image: url("img/fon1_600.jpg");
   }
   .name_desc-h1 {
     line-height: 1.6;
-    font-size: 23px;
+    font-size: 22px;
   }
 }
-@media (min-width: 400px) {
+@media (min-width: 410px) {
   .name_desc {
     height: 310px;
   }
@@ -697,6 +701,7 @@ nav {
 @media (min-width: 600px) {
   .name_desc {
     height: 410px;
+    background-image: url("img/fon1_1000.jpg");
   }
 }
 @media (min-width: 676px) {
@@ -725,6 +730,7 @@ nav {
 @media (min-width: 992px) {
   .name_desc {
     height: 540px;
+    background-image: url("img/fon1_1920.jpg");
   }
   .name_desc-h1 {
     line-height: 1.3;
@@ -754,6 +760,7 @@ nav {
   text-decoration: none;
   color: #3d449a;
   font-weight: bold;
+  font-size: 20px;
   padding: 8px;
   margin: 2px;
   width: 100%;
@@ -833,7 +840,7 @@ nav {
   .h2 {
     padding: 8px 10px 8px 10px;
     margin: 0 auto;
-    font-size: 18px;
+    font-size: 22px;
     line-height: 26px;
   }
 }
@@ -841,7 +848,7 @@ nav {
   .h2 {
     padding: 10px 15px 10px 15px;
     margin: 2px auto;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 28px;
   }
 }
@@ -849,7 +856,7 @@ nav {
   .h2 {
     padding: 12px 18px 12px 18px;
     margin: 4px auto;
-    font-size: 22px;
+    font-size: 26px;
     line-height: 32px;
   }
 }
@@ -857,33 +864,34 @@ nav {
   .h2 {
     padding: 14px 20px 14px 20px;
     margin: 6px auto;
-    font-size: 22px;
+    font-size: 28px;
   }
 }
 @media (min-width: 768px) {
   .h2 {
     padding: 16px 25px 16px 25px;
     margin: 8px auto;
-    font-size: 24px;
+    font-size: 30px;
   }
 }
 @media (min-width: 1200px) {
   .h2 {
     padding: 20px 30px 20px 30px;
     margin: 10px auto;
-    font-size: 26px;
+    font-size: 34px;
     font-weight: 700;
   }
 }
 .about-section,
 .contact-section,
-.reviews-section {
+.examples-section {
   background-color: #f2f2f2;
 }
 .contact-mini,
 .advant-section,
 .services-bg,
-header {
+header,
+.reviews-section {
   background-color: #fcfcfc;
 }
 .about,
@@ -954,22 +962,28 @@ header {
   background-size: cover;
 }
 .card-top {
-  display: inline-block;
-  margin-left: 25px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  display: block;
+  margin-top: 0px;
+  margin-bottom: 40px;
   font-size: 18px;
   text-decoration: none;
+  text-align: center;
 }
-.card-top div {
-  display: inline-block;
+.card-top img {
+  height: 40px;
 }
 .card-top span {
-  vertical-align: super;
+  text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
 }
 .card p {
   text-align: center;
+  text-decoration: underline;
+}
+.slider2,
+.slider1 {
+  padding-bottom: 30px !important;
 }
 .reviews p {
   font-weight: normal;
@@ -979,8 +993,12 @@ header {
 }
 .reviews-row {
   display: flex;
-  flex-wrap: wrap;
-  margin: -15px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.reviews-item- {
+  max-width: 350px;
+  margin: auto;
 }
 .reviews-item {
   width: 100%;
@@ -989,14 +1007,45 @@ header {
   font-size: 16px;
   text-decoration: none;
 }
+@media (max-width: 440px) {
+  .reviews-item- {
+    max-width: 70%;
+  }
+}
 @media (max-width: 400px) {
   .reviews-item {
     padding: 8px 15px;
   }
 }
-p.reviews-name {
+.reviews-name {
+  height: 40px;
+}
+.reviews-name img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.reviews-name p {
+  display: inline-block;
+  vertical-align: text-bottom;
+  padding-left: 10px;
+  word-wrap: break-word;
+  height: 30px;
   font-size: 20px;
   font-weight: bold;
+}
+@media (max-width: 450px) {
+  .reviews-name {
+    height: auto;
+  }
+  .reviews-name img {
+    display: block;
+    margin: auto;
+  }
+  .reviews-name p {
+    display: block;
+    text-align: center;
+  }
 }
 @media (min-width: 576px) {
   .reviews-item {
@@ -1006,6 +1055,14 @@ p.reviews-name {
 @media (min-width: 1200px) {
   .reviews-item {
     width: 25%;
+  }
+}
+@media (min-width: 1400px) {
+  .swiper-button-prev2 {
+    left: -35px !important;
+  }
+  .swiper-button-next2 {
+    right: -35px !important;
   }
 }
 .call-section {
@@ -1025,7 +1082,6 @@ p.reviews-name {
 .call-bg {
   position: fixed;
   z-index: -1;
-  background-image: url("img/testi1.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -1043,7 +1099,8 @@ p.reviews-name {
 .services-bg,
 .advant-section,
 .call-section,
-.contact-section {
+.contact-section,
+.examples-section {
   padding: 15px 0 20px 0;
 }
 .contact-section a {
@@ -1056,6 +1113,45 @@ p.reviews-name {
   display: flex;
   justify-content: center;
 }
+.facebook {
+  color: #385898;
+  font-size: 18px;
+  letter-spacing: -1px;
+  padding: 13px 20px 16px 0px;
+  font-weight: 600;
+  font-weight: bold;
+  text-decoration: none;
+}
+.youtube {
+  padding: 10px 20px 12px 0px;
+}
+.TikTok {
+  padding: 10px 20px 10px 0px;
+}
+.TikTok img {
+  height: 19px;
+}
+.TikTok span {
+  padding-left: 3px;
+}
+.inst {
+  padding: 13px 20px 3px 0px;
+}
+.inst img {
+  height: 24px;
+}
+.Telegram {
+  padding: 12px 20px 5px 0px;
+}
+.Telegram img {
+  display: inline-block;
+  margin-bottom: -2px;
+  height: 19px;
+}
+.Telegram span {
+  font-size: 17px;
+  padding-left: 3px;
+}
 @media (max-width: 400px) {
   .contact-section a {
     font-size: 16px;
@@ -1067,7 +1163,8 @@ p.reviews-name {
   .services-bg,
   .advant-section,
   .call-section,
-  .contact-section {
+  .contact-section,
+  .examples-section {
     padding: 15px 0 20px 0;
   }
 }
@@ -1077,7 +1174,8 @@ p.reviews-name {
   .services-bg,
   .advant-section,
   .call-section,
-  .contact-section {
+  .contact-section,
+  .examples-section {
     padding: 18px 0 25px 0;
   }
 }
@@ -1087,7 +1185,8 @@ p.reviews-name {
   .services-bg,
   .advant-section,
   .call-section,
-  .contact-section {
+  .contact-section,
+  .examples-section {
     padding: 20px 0 30px 0;
   }
 }
@@ -1107,52 +1206,15 @@ footer {
   height: 40px;
   background-color: #3d449a;
 }
-.swiper-container {
-  width: 600px;
-  height: 300px;
-}
-</style><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>Document2</title></head><body><header><div class="fon-menu"></div><div class="container header-container" style="position: static;"><img class="logo" src="img/logosite1.png" alt=""/><nav><a class="menu-item" href="/index.html#top">Главная</a><a class="menu-item" href="/index.html#services">Услуги</a><a class="menu-item" href="/index.html#about">Обо мне</a><a class="menu-item" href="/index.html#reviews">Отзывы</a><a class="menu-item" href="#contact">Контакты</a><a class="menu-item" href="#">Блог</a><div class="burger"><div class="burger_line"></div><div class="burger_line burger_line-2"></div><div class="burger_line"></div></div></nav></div></header><div class="mb70or50" id="top"></div><section class="contact-mini"><a class="contact-mini-item" href="tel:+380935299116"><?xml class="contact-mini-icon" version="1.0" encoding="iso-8859-1"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg class="contact-mini-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35;" xml:space="preserve"><g><path d="M25.302,0H9.698c-1.3,0-2.364,1.063-2.364,2.364v30.271C7.334,33.936,8.398,35,9.698,35h15.604c1.3,0,2.364-1.062,2.364-2.364V2.364C27.666,1.063,26.602,0,25.302,0z M15.004,1.704h4.992c0.158,0,0.286,0.128,0.286,0.287c0,0.158-0.128,0.286-0.286,0.286h-4.992c-0.158,0-0.286-0.128-0.286-0.286C14.718,1.832,14.846,1.704,15.004,1.704z M17.5,33.818c-0.653,0-1.182-0.529-1.182-1.183s0.529-1.182,1.182-1.182s1.182,0.528,1.182,1.182S18.153,33.818,17.5,33.818z M26.021,30.625H8.979V3.749h17.042V30.625z"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>+38(093) 529-91-16</a><a class="contact-mini-item contact-mini-item--mail" href="mailto:advokat.soloviov@gmail.com"><?xml class="contact-mini-icon" version="1.0" encoding="iso-8859-1"?><svg class="contact-mini-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><g><path d="M10.688,95.156C80.958,154.667,204.26,259.365,240.5,292.01c4.865,4.406,10.083,6.646,15.5,6.646c5.406,0,10.615-2.219,15.469-6.604c36.271-32.677,159.573-137.385,229.844-196.896c4.375-3.698,5.042-10.198,1.5-14.719C494.625,69.99,482.417,64,469.333,64H42.667c-13.083,0-25.292,5.99-33.479,16.438C5.646,84.958,6.313,91.458,10.688,95.156z"/><path d="M505.813,127.406c-3.781-1.76-8.229-1.146-11.375,1.542C416.51,195.01,317.052,279.688,285.76,307.885c-17.563,15.854-41.938,15.854-59.542-0.021c-33.354-30.052-145.042-125-208.656-178.917c-3.167-2.688-7.625-3.281-11.375-1.542C2.417,129.156,0,132.927,0,137.083v268.25C0,428.865,19.135,448,42.667,448h426.667C492.865,448,512,428.865,512,405.333v-268.25C512,132.927,509.583,129.146,505.813,127.406z"/></g></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>advokat.soloviov@gmail.com</a><div class="contact-soc-wrap"><a class="contact-mini-item facebook" href="https://www.facebook.com/profile.php?id=100021842880966" target="_blank">Facebook</a><a class="contact-mini-item youtube" href="https://www.youtube.com/channel/UCVG3-hESyVPSVU6gydTPDGw?view_as=subscriber" target="_blank"><svg viewBox="0 0 200 60" preserveAspectRatio="xMidYMid meet" focusable="false" style="pointer-events: none; height: 24px;"><g viewBox="0 0 200 60" preserveAspectRatio="xMidYMid meet" class="style-scope ytd-topbar-logo-renderer">
-    <g>
-      <path fill="#FF0000" d="M63,14.87c-0.72-2.7-2.85-4.83-5.56-5.56C52.54,8,32.88,8,32.88,8S13.23,8,8.32,9.31
-        c-2.7,0.72-4.83,2.85-5.56,5.56C1.45,19.77,1.45,30,1.45,30s0,10.23,1.31,15.13c0.72,2.7,2.85,4.83,5.56,5.56
-        C13.23,52,32.88,52,32.88,52s19.66,0,24.56-1.31c2.7-0.72,4.83-2.85,5.56-5.56C64.31,40.23,64.31,30,64.31,30
-        S64.31,19.77,63,14.87z" class="style-scope ytd-topbar-logo-renderer"></path>
-      <polygon fill="#FFFFFF" points="26.6,39.43 42.93,30 26.6,20.57"></polygon>
-    </g>
-    <g class="style-scope ytd-topbar-logo-renderer">
-      <g id="youtube-paths" class="style-scope ytd-topbar-logo-renderer">
-        <path fill="#282828" d="M92.69,48.03c-1.24-0.84-2.13-2.14-2.65-3.91c-0.52-1.77-0.79-4.12-0.79-7.06v-4
-          c0-2.97,0.3-5.35,0.9-7.15c0.6-1.8,1.54-3.11,2.81-3.93c1.27-0.82,2.94-1.24,5.01-1.24c2.04,0,3.67,0.42,4.9,1.26
-          c1.23,0.84,2.13,2.15,2.7,3.93c0.57,1.78,0.85,4.16,0.85,7.12v4c0,2.94-0.28,5.3-0.83,7.08c-0.55,1.78-1.45,3.09-2.7,3.91
-          c-1.24,0.82-2.93,1.24-5.06,1.24C95.65,49.29,93.93,48.87,92.69,48.03z M99.66,43.71c0.34-0.9,0.52-2.37,0.52-4.4v-8.59
-          c0-1.98-0.17-3.42-0.52-4.34c-0.34-0.91-0.95-1.37-1.82-1.37c-0.84,0-1.43,0.46-1.78,1.37c-0.34,0.91-0.52,2.36-0.52,4.34v8.59
-          c0,2.04,0.16,3.51,0.49,4.4c0.33,0.9,0.93,1.35,1.8,1.35C98.71,45.06,99.31,44.61,99.66,43.71z" class="style-scope ytd-topbar-logo-renderer"></path>
-        <path fill="#282828" d="M188.16,37.13v1.39c0,1.77,0.05,3.09,0.16,3.98c0.1,0.88,0.32,1.53,0.65,1.93
-          c0.33,0.4,0.84,0.61,1.53,0.61c0.93,0,1.57-0.36,1.91-1.08c0.34-0.72,0.53-1.92,0.56-3.6l5.35,0.31
-          c0.03,0.24,0.04,0.57,0.04,0.99c0,2.55-0.7,4.45-2.09,5.71c-1.39,1.26-3.36,1.89-5.91,1.89c-3.06,0-5.2-0.96-6.43-2.88
-          c-1.23-1.92-1.84-4.88-1.84-8.9v-4.81c0-4.14,0.64-7.15,1.91-9.06c1.27-1.9,3.45-2.85,6.54-2.85c2.13,0,3.76,0.39,4.9,1.17
-          c1.14,0.78,1.94,1.99,2.41,3.64c0.46,1.65,0.7,3.93,0.7,6.83v4.72H188.16z M188.95,25.53c-0.31,0.39-0.52,1.03-0.63,1.91
-          c-0.11,0.88-0.16,2.23-0.16,4.02v1.98h4.54v-1.98c0-1.77-0.06-3.11-0.18-4.02c-0.12-0.91-0.34-1.56-0.65-1.93
-          c-0.31-0.37-0.8-0.56-1.46-0.56C189.75,24.94,189.26,25.14,188.95,25.53z" class="style-scope ytd-topbar-logo-renderer"></path>
-        <path fill="#282828" d="M77.59,36.61l-7.06-25.49h6.16l2.47,11.55c0.63,2.85,1.09,5.27,1.39,7.28h0.18
-          c0.21-1.44,0.67-3.85,1.39-7.24l2.56-11.6h6.16L83.7,36.61v12.23h-6.11V36.61z" class="style-scope ytd-topbar-logo-renderer"></path>
-        <path fill="#282828" d="M126.45,21.28v27.55h-4.85l-0.54-3.37h-0.13c-1.32,2.55-3.3,3.82-5.93,3.82c-1.83,0-3.18-0.6-4.05-1.8
-          c-0.87-1.2-1.3-3.07-1.3-5.62V21.28h6.2v20.23c0,1.23,0.13,2.11,0.4,2.63c0.27,0.52,0.72,0.79,1.35,0.79
-          c0.54,0,1.06-0.16,1.55-0.49c0.49-0.33,0.86-0.75,1.1-1.26V21.28H126.45z" class="style-scope ytd-topbar-logo-renderer"></path>
-        <path fill="#282828" d="M158.27,21.28v27.55h-4.85l-0.54-3.37h-0.13c-1.32,2.55-3.3,3.82-5.93,3.82c-1.83,0-3.18-0.6-4.05-1.8
-          c-0.87-1.2-1.3-3.07-1.3-5.62V21.28h6.2v20.23c0,1.23,0.13,2.11,0.4,2.63c0.27,0.52,0.72,0.79,1.35,0.79
-          c0.54,0,1.06-0.16,1.55-0.49c0.49-0.33,0.86-0.75,1.1-1.26V21.28H158.27z" class="style-scope ytd-topbar-logo-renderer"></path>
-        <path fill="#282828" d="M143.31,16.11h-6.16v32.72h-6.07V16.11h-6.16v-4.99h18.38V16.11z" class="style-scope ytd-topbar-logo-renderer"></path>
-        <path fill="#282828" d="M178.8,25.69c-0.38-1.74-0.98-3-1.82-3.78c-0.84-0.78-1.99-1.17-3.46-1.17c-1.14,0-2.2,0.32-3.19,0.97
-          c-0.99,0.64-1.75,1.49-2.29,2.54h-0.05l0-14.52h-5.98v39.11h5.12l0.63-2.61h0.13c0.48,0.93,1.2,1.66,2.16,2.2
-          c0.96,0.54,2.02,0.81,3.19,0.81c2.1,0,3.64-0.97,4.63-2.9c0.99-1.93,1.48-4.95,1.48-9.06v-4.36
-          C179.36,29.84,179.17,27.43,178.8,25.69z M173.11,36.93c0,2.01-0.08,3.58-0.25,4.72c-0.16,1.14-0.44,1.95-0.83,2.43
-          c-0.39,0.48-0.91,0.72-1.57,0.72c-0.51,0-0.98-0.12-1.42-0.36c-0.43-0.24-0.79-0.6-1.06-1.08V27.71
-          c0.21-0.75,0.57-1.36,1.08-1.84c0.51-0.48,1.06-0.72,1.66-0.72c0.63,0,1.12,0.25,1.46,0.74c0.34,0.49,0.58,1.33,0.72,2.49
-          c0.13,1.17,0.2,2.83,0.2,4.99V36.93z" class="style-scope ytd-topbar-logo-renderer"></path>
-      </g>
-    </g>
-  </g></svg></a></div></section></body></html><style>/**
+</style><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>Адвокат Дмитрий Соловьев | Услуги адвоката в Одессе</title><!-- Google Tag Manager -->
+<!-- End Google Tag Manager -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="description" content="Адвокат Дмитрий Соловьев в Одессе. Эффективное решение юридических вопросов от консультации до ведения дела в суде. Индивидуальный подход к каждому клиенту. Решение юридических вопросов любой сложности. Звоните +380935299116">
+<link href="/images/favic2.png" rel="shortcut icon" type="image/vnd.microsoft.icon">
+<meta content="website" property="og:type">
+<meta content="Адвокат Дмитрий Соловьев | Услуги адвоката в Одессе" property="og:title"></head><body><header><div class="fon-menu"></div><div class="container header-container" style="position: static;"><img class="logo" src="img/logosite1.png" alt=""/><nav><a class="menu-item" href="/index.html#top">Главная</a><a class="menu-item" href="/index.html#services">Услуги</a><a class="menu-item" href="/index.html#about">Обо мне</a><a class="menu-item" href="/index.html#examples">Примеры выигранных дел</a><a class="menu-item" href="/index.html#reviews">Отзывы</a><a class="menu-item" href="#contact">Контакты</a><a class="menu-item" href="#">Блог</a><div class="burger"><div class="burger_line"></div><div class="burger_line burger_line-2"></div><div class="burger_line"></div></div></nav></div></header><div class="mb70or50" id="top"></div><section class="contact-mini"><a class="contact-mini-item" href="tel:+380935299116"><?xml class="contact-mini-icon" version="1.0" encoding="iso-8859-1"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg class="contact-mini-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35;" xml:space="preserve"><g><path d="M25.302,0H9.698c-1.3,0-2.364,1.063-2.364,2.364v30.271C7.334,33.936,8.398,35,9.698,35h15.604c1.3,0,2.364-1.062,2.364-2.364V2.364C27.666,1.063,26.602,0,25.302,0z M15.004,1.704h4.992c0.158,0,0.286,0.128,0.286,0.287c0,0.158-0.128,0.286-0.286,0.286h-4.992c-0.158,0-0.286-0.128-0.286-0.286C14.718,1.832,14.846,1.704,15.004,1.704z M17.5,33.818c-0.653,0-1.182-0.529-1.182-1.183s0.529-1.182,1.182-1.182s1.182,0.528,1.182,1.182S18.153,33.818,17.5,33.818z M26.021,30.625H8.979V3.749h17.042V30.625z"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>+38(093) 529-91-16</a><a class="contact-mini-item contact-mini-item--mail" href="mailto:advokat.soloviov@gmail.com"><?xml class="contact-mini-icon" version="1.0" encoding="iso-8859-1"?><svg class="contact-mini-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><g><path d="M10.688,95.156C80.958,154.667,204.26,259.365,240.5,292.01c4.865,4.406,10.083,6.646,15.5,6.646c5.406,0,10.615-2.219,15.469-6.604c36.271-32.677,159.573-137.385,229.844-196.896c4.375-3.698,5.042-10.198,1.5-14.719C494.625,69.99,482.417,64,469.333,64H42.667c-13.083,0-25.292,5.99-33.479,16.438C5.646,84.958,6.313,91.458,10.688,95.156z"/><path d="M505.813,127.406c-3.781-1.76-8.229-1.146-11.375,1.542C416.51,195.01,317.052,279.688,285.76,307.885c-17.563,15.854-41.938,15.854-59.542-0.021c-33.354-30.052-145.042-125-208.656-178.917c-3.167-2.688-7.625-3.281-11.375-1.542C2.417,129.156,0,132.927,0,137.083v268.25C0,428.865,19.135,448,42.667,448h426.667C492.865,448,512,428.865,512,405.333v-268.25C512,132.927,509.583,129.146,505.813,127.406z"/></g></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>advokat.soloviov@gmail.com</a></section></body></html><style>/**
  * Swiper 6.4.1
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * https://swiperjs.com
@@ -1164,8 +1226,8 @@ footer {
  * Released on: December 9, 2020
  */
 
-@font-face{font-family:swiper-icons;src:url('data:application/font-woff;charset=utf-8;base64, d09GRgABAAAAAAZgABAAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAAGRAAAABoAAAAci6qHkUdERUYAAAWgAAAAIwAAACQAYABXR1BPUwAABhQAAAAuAAAANuAY7+xHU1VCAAAFxAAAAFAAAABm2fPczU9TLzIAAAHcAAAASgAAAGBP9V5RY21hcAAAAkQAAACIAAABYt6F0cBjdnQgAAACzAAAAAQAAAAEABEBRGdhc3AAAAWYAAAACAAAAAj//wADZ2x5ZgAAAywAAADMAAAD2MHtryVoZWFkAAABbAAAADAAAAA2E2+eoWhoZWEAAAGcAAAAHwAAACQC9gDzaG10eAAAAigAAAAZAAAArgJkABFsb2NhAAAC0AAAAFoAAABaFQAUGG1heHAAAAG8AAAAHwAAACAAcABAbmFtZQAAA/gAAAE5AAACXvFdBwlwb3N0AAAFNAAAAGIAAACE5s74hXjaY2BkYGAAYpf5Hu/j+W2+MnAzMYDAzaX6QjD6/4//Bxj5GA8AuRwMYGkAPywL13jaY2BkYGA88P8Agx4j+/8fQDYfA1AEBWgDAIB2BOoAeNpjYGRgYNBh4GdgYgABEMnIABJzYNADCQAACWgAsQB42mNgYfzCOIGBlYGB0YcxjYGBwR1Kf2WQZGhhYGBiYGVmgAFGBiQQkOaawtDAoMBQxXjg/wEGPcYDDA4wNUA2CCgwsAAAO4EL6gAAeNpj2M0gyAACqxgGNWBkZ2D4/wMA+xkDdgAAAHjaY2BgYGaAYBkGRgYQiAHyGMF8FgYHIM3DwMHABGQrMOgyWDLEM1T9/w8UBfEMgLzE////P/5//f/V/xv+r4eaAAeMbAxwIUYmIMHEgKYAYjUcsDAwsLKxc3BycfPw8jEQA/gZBASFhEVExcQlJKWkZWTl5BUUlZRVVNXUNTQZBgMAAMR+E+gAEQFEAAAAKgAqACoANAA+AEgAUgBcAGYAcAB6AIQAjgCYAKIArAC2AMAAygDUAN4A6ADyAPwBBgEQARoBJAEuATgBQgFMAVYBYAFqAXQBfgGIAZIBnAGmAbIBzgHsAAB42u2NMQ6CUAyGW568x9AneYYgm4MJbhKFaExIOAVX8ApewSt4Bic4AfeAid3VOBixDxfPYEza5O+Xfi04YADggiUIULCuEJK8VhO4bSvpdnktHI5QCYtdi2sl8ZnXaHlqUrNKzdKcT8cjlq+rwZSvIVczNiezsfnP/uznmfPFBNODM2K7MTQ45YEAZqGP81AmGGcF3iPqOop0r1SPTaTbVkfUe4HXj97wYE+yNwWYxwWu4v1ugWHgo3S1XdZEVqWM7ET0cfnLGxWfkgR42o2PvWrDMBSFj/IHLaF0zKjRgdiVMwScNRAoWUoH78Y2icB/yIY09An6AH2Bdu/UB+yxopYshQiEvnvu0dURgDt8QeC8PDw7Fpji3fEA4z/PEJ6YOB5hKh4dj3EvXhxPqH/SKUY3rJ7srZ4FZnh1PMAtPhwP6fl2PMJMPDgeQ4rY8YT6Gzao0eAEA409DuggmTnFnOcSCiEiLMgxCiTI6Cq5DZUd3Qmp10vO0LaLTd2cjN4fOumlc7lUYbSQcZFkutRG7g6JKZKy0RmdLY680CDnEJ+UMkpFFe1RN7nxdVpXrC4aTtnaurOnYercZg2YVmLN/d/gczfEimrE/fs/bOuq29Zmn8tloORaXgZgGa78yO9/cnXm2BpaGvq25Dv9S4E9+5SIc9PqupJKhYFSSl47+Qcr1mYNAAAAeNptw0cKwkAAAMDZJA8Q7OUJvkLsPfZ6zFVERPy8qHh2YER+3i/BP83vIBLLySsoKimrqKqpa2hp6+jq6RsYGhmbmJqZSy0sraxtbO3sHRydnEMU4uR6yx7JJXveP7WrDycAAAAAAAH//wACeNpjYGRgYOABYhkgZgJCZgZNBkYGLQZtIJsFLMYAAAw3ALgAeNolizEKgDAQBCchRbC2sFER0YD6qVQiBCv/H9ezGI6Z5XBAw8CBK/m5iQQVauVbXLnOrMZv2oLdKFa8Pjuru2hJzGabmOSLzNMzvutpB3N42mNgZGBg4GKQYzBhYMxJLMlj4GBgAYow/P/PAJJhLM6sSoWKfWCAAwDAjgbRAAB42mNgYGBkAIIbCZo5IPrmUn0hGA0AO8EFTQAA') format('woff');font-weight:400;font-style:normal}:root{--swiper-theme-color:#007aff}.swiper-container{margin-left:auto;margin-right:auto;position:relative;overflow:hidden;list-style:none;padding:0;z-index:1}.swiper-container-vertical>.swiper-wrapper{flex-direction:column}.swiper-wrapper{position:relative;width:100%;height:100%;z-index:1;display:flex;transition-property:transform;box-sizing:content-box}.swiper-container-android .swiper-slide,.swiper-wrapper{transform:translate3d(0px,0,0)}.swiper-container-multirow>.swiper-wrapper{flex-wrap:wrap}.swiper-container-multirow-column>.swiper-wrapper{flex-wrap:wrap;flex-direction:column}.swiper-container-free-mode>.swiper-wrapper{transition-timing-function:ease-out;margin:0 auto}.swiper-slide{flex-shrink:0;width:100%;height:100%;position:relative;transition-property:transform}.swiper-slide-invisible-blank{visibility:hidden}.swiper-container-autoheight,.swiper-container-autoheight .swiper-slide{height:auto}.swiper-container-autoheight .swiper-wrapper{align-items:flex-start;transition-property:transform,height}.swiper-container-3d{perspective:1200px}.swiper-container-3d .swiper-cube-shadow,.swiper-container-3d .swiper-slide,.swiper-container-3d .swiper-slide-shadow-bottom,.swiper-container-3d .swiper-slide-shadow-left,.swiper-container-3d .swiper-slide-shadow-right,.swiper-container-3d .swiper-slide-shadow-top,.swiper-container-3d .swiper-wrapper{transform-style:preserve-3d}.swiper-container-3d .swiper-slide-shadow-bottom,.swiper-container-3d .swiper-slide-shadow-left,.swiper-container-3d .swiper-slide-shadow-right,.swiper-container-3d .swiper-slide-shadow-top{position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:none;z-index:10}.swiper-container-3d .swiper-slide-shadow-left{background-image:linear-gradient(to left,rgba(0,0,0,.5),rgba(0,0,0,0))}.swiper-container-3d .swiper-slide-shadow-right{background-image:linear-gradient(to right,rgba(0,0,0,.5),rgba(0,0,0,0))}.swiper-container-3d .swiper-slide-shadow-top{background-image:linear-gradient(to top,rgba(0,0,0,.5),rgba(0,0,0,0))}.swiper-container-3d .swiper-slide-shadow-bottom{background-image:linear-gradient(to bottom,rgba(0,0,0,.5),rgba(0,0,0,0))}.swiper-container-css-mode>.swiper-wrapper{overflow:auto;scrollbar-width:none;-ms-overflow-style:none}.swiper-container-css-mode>.swiper-wrapper::-webkit-scrollbar{display:none}.swiper-container-css-mode>.swiper-wrapper>.swiper-slide{scroll-snap-align:start start}.swiper-container-horizontal.swiper-container-css-mode>.swiper-wrapper{scroll-snap-type:x mandatory}.swiper-container-vertical.swiper-container-css-mode>.swiper-wrapper{scroll-snap-type:y mandatory}:root{--swiper-navigation-size:44px}.swiper-button-next,.swiper-button-prev{position:absolute;top:50%;width:calc(var(--swiper-navigation-size)/ 44 * 27);height:var(--swiper-navigation-size);margin-top:calc(-1 * var(--swiper-navigation-size)/ 2);z-index:10;cursor:pointer;display:flex;align-items:center;justify-content:center;color:var(--swiper-navigation-color,var(--swiper-theme-color))}.swiper-button-next.swiper-button-disabled,.swiper-button-prev.swiper-button-disabled{opacity:.35;cursor:auto;pointer-events:none}.swiper-button-next:after,.swiper-button-prev:after{font-family:swiper-icons;font-size:var(--swiper-navigation-size);text-transform:none!important;letter-spacing:0;text-transform:none;font-variant:initial;line-height:1}.swiper-button-prev,.swiper-container-rtl .swiper-button-next{left:10px;right:auto}.swiper-button-prev:after,.swiper-container-rtl .swiper-button-next:after{content:'prev'}.swiper-button-next,.swiper-container-rtl .swiper-button-prev{right:10px;left:auto}.swiper-button-next:after,.swiper-container-rtl .swiper-button-prev:after{content:'next'}.swiper-button-next.swiper-button-white,.swiper-button-prev.swiper-button-white{--swiper-navigation-color:#ffffff}.swiper-button-next.swiper-button-black,.swiper-button-prev.swiper-button-black{--swiper-navigation-color:#000000}.swiper-button-lock{display:none}.swiper-pagination{position:absolute;text-align:center;transition:.3s opacity;transform:translate3d(0,0,0);z-index:10}.swiper-pagination.swiper-pagination-hidden{opacity:0}.swiper-container-horizontal>.swiper-pagination-bullets,.swiper-pagination-custom,.swiper-pagination-fraction{bottom:10px;left:0;width:100%}.swiper-pagination-bullets-dynamic{overflow:hidden;font-size:0}.swiper-pagination-bullets-dynamic .swiper-pagination-bullet{transform:scale(.33);position:relative}.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active{transform:scale(1)}.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-main{transform:scale(1)}.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev{transform:scale(.66)}.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev-prev{transform:scale(.33)}.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next{transform:scale(.66)}.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next-next{transform:scale(.33)}.swiper-pagination-bullet{width:8px;height:8px;display:inline-block;border-radius:100%;background:#000;opacity:.2}button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-webkit-appearance:none;-moz-appearance:none;appearance:none}.swiper-pagination-clickable .swiper-pagination-bullet{cursor:pointer}.swiper-pagination-bullet-active{opacity:1;background:var(--swiper-pagination-color,var(--swiper-theme-color))}.swiper-container-vertical>.swiper-pagination-bullets{right:10px;top:50%;transform:translate3d(0px,-50%,0)}.swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet{margin:6px 0;display:block}.swiper-container-vertical>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic{top:50%;transform:translateY(-50%);width:8px}.swiper-container-vertical>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet{display:inline-block;transition:.2s transform,.2s top}.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{margin:0 4px}.swiper-container-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic{left:50%;transform:translateX(-50%);white-space:nowrap}.swiper-container-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet{transition:.2s transform,.2s left}.swiper-container-horizontal.swiper-container-rtl>.swiper-pagination-bullets-dynamic .swiper-pagination-bullet{transition:.2s transform,.2s right}.swiper-pagination-progressbar{background:rgba(0,0,0,.25);position:absolute}.swiper-pagination-progressbar .swiper-pagination-progressbar-fill{background:var(--swiper-pagination-color,var(--swiper-theme-color));position:absolute;left:0;top:0;width:100%;height:100%;transform:scale(0);transform-origin:left top}.swiper-container-rtl .swiper-pagination-progressbar .swiper-pagination-progressbar-fill{transform-origin:right top}.swiper-container-horizontal>.swiper-pagination-progressbar,.swiper-container-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite{width:100%;height:4px;left:0;top:0}.swiper-container-horizontal>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite,.swiper-container-vertical>.swiper-pagination-progressbar{width:4px;height:100%;left:0;top:0}.swiper-pagination-white{--swiper-pagination-color:#ffffff}.swiper-pagination-black{--swiper-pagination-color:#000000}.swiper-pagination-lock{display:none}.swiper-scrollbar{border-radius:10px;position:relative;-ms-touch-action:none;background:rgba(0,0,0,.1)}.swiper-container-horizontal>.swiper-scrollbar{position:absolute;left:1%;bottom:3px;z-index:50;height:5px;width:98%}.swiper-container-vertical>.swiper-scrollbar{position:absolute;right:3px;top:1%;z-index:50;width:5px;height:98%}.swiper-scrollbar-drag{height:100%;width:100%;position:relative;background:rgba(0,0,0,.5);border-radius:10px;left:0;top:0}.swiper-scrollbar-cursor-drag{cursor:move}.swiper-scrollbar-lock{display:none}.swiper-zoom-container{width:100%;height:100%;display:flex;justify-content:center;align-items:center;text-align:center}.swiper-zoom-container>canvas,.swiper-zoom-container>img,.swiper-zoom-container>svg{max-width:100%;max-height:100%;object-fit:contain}.swiper-slide-zoomed{cursor:move}.swiper-lazy-preloader{width:42px;height:42px;position:absolute;left:50%;top:50%;margin-left:-21px;margin-top:-21px;z-index:10;transform-origin:50%;animation:swiper-preloader-spin 1s infinite linear;box-sizing:border-box;border:4px solid var(--swiper-preloader-color,var(--swiper-theme-color));border-radius:50%;border-top-color:transparent}.swiper-lazy-preloader-white{--swiper-preloader-color:#fff}.swiper-lazy-preloader-black{--swiper-preloader-color:#000}@keyframes swiper-preloader-spin{100%{transform:rotate(360deg)}}.swiper-container .swiper-notification{position:absolute;left:0;top:0;pointer-events:none;opacity:0;z-index:-1000}.swiper-container-fade.swiper-container-free-mode .swiper-slide{transition-timing-function:ease-out}.swiper-container-fade .swiper-slide{pointer-events:none;transition-property:opacity}.swiper-container-fade .swiper-slide .swiper-slide{pointer-events:none}.swiper-container-fade .swiper-slide-active,.swiper-container-fade .swiper-slide-active .swiper-slide-active{pointer-events:auto}.swiper-container-cube{overflow:visible}.swiper-container-cube .swiper-slide{pointer-events:none;-webkit-backface-visibility:hidden;backface-visibility:hidden;z-index:1;visibility:hidden;transform-origin:0 0;width:100%;height:100%}.swiper-container-cube .swiper-slide .swiper-slide{pointer-events:none}.swiper-container-cube.swiper-container-rtl .swiper-slide{transform-origin:100% 0}.swiper-container-cube .swiper-slide-active,.swiper-container-cube .swiper-slide-active .swiper-slide-active{pointer-events:auto}.swiper-container-cube .swiper-slide-active,.swiper-container-cube .swiper-slide-next,.swiper-container-cube .swiper-slide-next+.swiper-slide,.swiper-container-cube .swiper-slide-prev{pointer-events:auto;visibility:visible}.swiper-container-cube .swiper-slide-shadow-bottom,.swiper-container-cube .swiper-slide-shadow-left,.swiper-container-cube .swiper-slide-shadow-right,.swiper-container-cube .swiper-slide-shadow-top{z-index:0;-webkit-backface-visibility:hidden;backface-visibility:hidden}.swiper-container-cube .swiper-cube-shadow{position:absolute;left:0;bottom:0px;width:100%;height:100%;background:#000;opacity:.6;-webkit-filter:blur(50px);filter:blur(50px);z-index:0}.swiper-container-flip{overflow:visible}.swiper-container-flip .swiper-slide{pointer-events:none;-webkit-backface-visibility:hidden;backface-visibility:hidden;z-index:1}.swiper-container-flip .swiper-slide .swiper-slide{pointer-events:none}.swiper-container-flip .swiper-slide-active,.swiper-container-flip .swiper-slide-active .swiper-slide-active{pointer-events:auto}.swiper-container-flip .swiper-slide-shadow-bottom,.swiper-container-flip .swiper-slide-shadow-left,.swiper-container-flip .swiper-slide-shadow-right,.swiper-container-flip .swiper-slide-shadow-top{z-index:0;-webkit-backface-visibility:hidden;backface-visibility:hidden}
-</style><section class="name_desc"><h1 class="name_desc-h1">Адвокат Дмитрий Соловьёв <br>Юридические Услуги <br>в Одессе и по Украине</h1></section><section class="services-bg"><div id="services"></div><div class="services container"><div class="services_head"><h2 class="h2">ВИДЫ УСЛУГ</h2></div><div class="col col-left"><div class="services_icon_wrap"><i class="services_icon"><?xml version="1.0" encoding="iso-8859-1"?><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.004 512.004" style="enable-background:new 0 0 512.004 512.004;" xml:space="preserve"><g><g><path d="M501.24,180.858L331.137,10.755c-14.327-14.327-37.636-14.327-51.963,0l-89.869,89.869c-14.327,14.327-14.327,37.637,0,51.964l54.038,54.039L227.7,222.27l-8.997,8.997l62.026,62.025l24.64-24.64l54.039,54.039c6.938,6.94,16.167,10.762,25.982,10.762c9.813,0,19.042-3.822,25.982-10.762l89.869-89.869c6.94-6.939,10.763-16.167,10.763-25.983S508.179,187.797,501.24,180.858z"/></g></g><g><g><rect x="-9.889" y="338.376" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -232.2751 203.7074)" width="279.296" height="87.717"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></i></div><a href="legal-services.html" target="_blank">Юридические консультации</a><a href="lawyer-in-civil-cases.html" target="_blank">Адвокат по гражданским делам</a><a href="family-disputes.html" target="_blank">Семейные споры</a><a href="auto-advocat.html" target="_blank">Помощь при ДТП - АвтоАдвокат</a><a href="housing-disputes.html" target="_blank">Жилищные споры</a><a href="#">Решение споров по земле и недвижимости</a><a href="hereditary-disputes.html" target="_blank">Наследственные споры</a><a href="disputes-with-banks.html" target="_blank">Споры с банками и МФО</a></div><div class="col col-right"><div class="services_icon_wrap"><i class="services_icon"><?xml version="1.0" encoding="iso-8859-1"?><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 453.44 453.44" style="enable-background:new 0 0 453.44 453.44;" xml:space="preserve"><g><g><path d="M397.76,389.722h-0.16H55.68C25.001,389.897,0.175,414.723,0,445.402c0,4.418,3.582,8,8,8h437.44c4.418,0,8-3.582,8-8C453.265,414.723,428.439,389.897,397.76,389.722z"/></g></g><g><g><path d="M452.652,145.165c-0.214-2.265-1.382-4.332-3.212-5.683L230.92,1.242c-2.584-1.605-5.856-1.605-8.44,0L4.2,139.122c-3.746,2.343-4.883,7.279-2.541,11.025c1.349,2.157,3.644,3.544,6.181,3.735h437.6C449.839,153.466,453.068,149.564,452.652,145.165z"/></g></g><g><g><path d="M38.64,165.842c7.231,18.842,24.04,32.335,44,35.32v176.56h63.64v-176h48.6v176h63.52v-176H307v176h63.64v-176.56c19.96-2.985,36.769-16.478,44-35.32H38.64z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></i></div><a href="representation-of-interests.html" target="_blank">Представление интересов в суде</a><a href="criminal-proceedings.html" target="_blank">Адвокат по уголовным делам</a><a href="migration-services.html" target="_blank">Миграционные услуги</a><a href="recalculation-of-military-pensions.html" target="_blank">Перерасчет военных пенсий</a><a href="#">Юридическое обслуживание предприятий</a><a href="#">Подготовка и экспертиза договоров</a><a href="#">Обжалование незаконных решений и штрафов</a></div></div></section><section class="about-section"><div id="about"></div><div class="about container"><div class="services_head"><h2 class="h2">ОБО МНЕ</h2></div><div class="col col-left"><img class="I-img" src="img/soloviov.jpg" alt=""/></div><div class="col col-right"><p>Приветствую Вас на моем сайте, если у Вас возникли вопросы юридического характера, в которых требуется помощь адвоката или юриста, Вы можете обратиться ко мне для получения консультации. У меня индивидуальный подход к каждому клиенту и я всегда нацелен только на положительный результат, обращайтесь ко мне и останетесь довольны.</p><b>Стоимость оказания правовой помощи зависит от сложности и возможной продолжительности дела, объема предстоящей работы. Связаться со мной можно по Телефону или по Email в разделе Контакты.</b><img class="I-img diplom" src="https://advokat-soloviov.com.ua/images/2017/07/01/002.jpg" alt=""/></div></div></section><section class="advant-section"><div class="advant container"><div class="services_head"><h2 class="h2">ПРЕИМУЩЕСТВА РАБОТЫ СО МНОЙ</h2></div><div class="col col-left"><img class="I-img" src="https://advokat-soloviov.com.ua/images/2017/07/01/property-settlement.jpg" alt=""/></div><div class="col col-right"> <div class="list-icon"><div class="col-icon"><?xml version="1.0" encoding="iso-8859-1"?><svg version="1.1" style="height: 34px; width: 34px;" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><path d="M437.02,74.98C388.667,26.629,324.38,0,256,0S123.333,26.629,74.98,74.98C26.629,123.333,0,187.62,0,256s26.629,132.667,74.98,181.02C123.333,485.371,187.62,512,256,512s132.667-26.629,181.02-74.98C485.371,388.667,512,324.38,512,256S485.371,123.333,437.02,74.98z M256,70c30.327,0,55,24.673,55,55c0,30.327-24.673,55-55,55c-30.327,0-55-24.673-55-55C201,94.673,225.673,70,256,70z M326,420H186v-30h30V240h-30v-30h110v180h30V420z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></div><div class="advant-text"><h3 class="h3">Честность</h3><p>Я реально оценю ситуацию и перспективы решения вашей проблемы и буду работать исключительно с целью выиграть дело в суде или добиться иного положительного результата.</p></div></div><div class="list-icon"><div class="col-icon"><?xml version="1.0" encoding="iso-8859-1"?><svg version="1.1" style="height: 34px; width: 34px;" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><path d="M437.02,74.98C388.667,26.629,324.38,0,256,0S123.333,26.629,74.98,74.98C26.629,123.333,0,187.62,0,256s26.629,132.667,74.98,181.02C123.333,485.371,187.62,512,256,512s132.667-26.629,181.02-74.98C485.371,388.667,512,324.38,512,256S485.371,123.333,437.02,74.98z M256,70c30.327,0,55,24.673,55,55c0,30.327-24.673,55-55,55c-30.327,0-55-24.673-55-55C201,94.673,225.673,70,256,70z M326,420H186v-30h30V240h-30v-30h110v180h30V420z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></div><div class="advant-text"><h3 class="h3">Компетентность</h3><p>Я оказываю правовую помощь лишь в тех областях, в которых имею значительный опыт и накопленные знания.</p></div></div><div class="list-icon"><div class="col-icon"><?xml version="1.0" encoding="iso-8859-1"?><svg version="1.1" style="height: 34px; width: 34px;" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><path d="M437.02,74.98C388.667,26.629,324.38,0,256,0S123.333,26.629,74.98,74.98C26.629,123.333,0,187.62,0,256s26.629,132.667,74.98,181.02C123.333,485.371,187.62,512,256,512s132.667-26.629,181.02-74.98C485.371,388.667,512,324.38,512,256S485.371,123.333,437.02,74.98z M256,70c30.327,0,55,24.673,55,55c0,30.327-24.673,55-55,55c-30.327,0-55-24.673-55-55C201,94.673,225.673,70,256,70z M326,420H186v-30h30V240h-30v-30h110v180h30V420z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></div><div class="advant-text"><h3 class="h3">Доступность</h3><p>Я оказываю адвокатские услуги в Одессе по вполне доступным ценам. При этом, юридические услуги могут быть оплачены в различной форме. Предусмотрена как оплата за отдельные действия, так и единоразовая оплата.</p></div></div></div></div></section><section class="reviews-section"><div id="reviews"></div><div class="reviews container"><div class="services_head"><h2 class="h2">ВЫИГРАННЫЕ ДЕЛА</h2></div><div class="reviews-row"><a class="reviews-item" href="https://reyestr.court.gov.ua/Review/92920614" target="_blank"><div class="card" style="background-image: url('img/3.jpg');"><div class="card-top"><span>&nbsp;</span></div></div></a><a class="reviews-item" href="https://reyestr.court.gov.ua/Review/92920614" target="_blank"><div class="card" style="background-image: url('img/paper.jpg');"><div class="card-top"><span>&nbsp;Дело №&nbsp;</span><div>&nbsp;420/<br>&nbsp;6412/20</div></div><p>Восстановление разрешения на иммиграцию и вида на жительство</p></div></a><a class="reviews-item" href="https://reyestr.court.gov.ua/Review/92730623" target="_blank"><div class="card" style="background-image: url('img/paper.jpg');"><div class="card-top"><span>Дело №&nbsp;</span><div>521/<br>2738/2012</div></div><p>Кредитный спор, банку отказали во взыскании более 1 миллиона гривен с поручителя</p></div></a><a class="reviews-item" href="https://reyestr.court.gov.ua/Review/92789860" target="_blank"><div class="card" style="background-image: url('img/paper.jpg');"><div class="card-top"><span>Дело №&nbsp;</span><div>&nbsp;1519/<br>&nbsp;2738/2012</div></div><p>Отмена запрета на выезд из Украины</p></div></a><a class="reviews-item" href="https://reyestr.court.gov.ua/Review/88203700" target="_blank"><div class="card" style="background-image: url('img/paper.jpg');"><div class="card-top"><span>&nbsp;Дело №&nbsp;</span><div>&nbsp;420/<br>&nbsp;1130/20</div></div><p>Повышение военной пенсии с 70% до 90% денежного обеспечения</p></div></a><a class="reviews-item" href="https://reyestr.court.gov.ua/Review/87227087" target="_blank"><div class="card" style="background-image: url('img/paper.jpg');"><div class="card-top"><span>Дело №&nbsp;</span><div>&nbsp;520/<br>7090/19</div></div><p>Выселение</p></div></a><a class="reviews-item" href="https://reyestr.court.gov.ua/Review/91612390" target="_blank"><div class="card" style="background-image: url('img/paper.jpg');"><div class="card-top"><span>Дело №&nbsp;</span><div>&nbsp;522/<br>&nbsp;17179/19</div></div><p>Признание лица недееспособным и назначение опекуна</p></div></a><a class="reviews-item" href="https://reyestr.court.gov.ua/Review/85968018" target="_blank"><div class="card" style="background-image: url('img/paper.jpg');"><div class="card-top"><span>Дело №&nbsp;</span><div>&nbsp;521/<br>&nbsp;15220/19</div></div><p>Установление факта проживания на территории Украины</p></div></a></div></div></section><section class="reviews-section"><div id="reviews"></div><div class="reviews container"><div class="services_head"><h2 class="h2">ОТЗЫВЫ О МОЕЙ РАБОТЕ</h2></div><div class="reviews-row"><div class="reviews-item"><p>Обращался к адвокату Дмитрию по вопросу обжалования незаконной отмены разрешения на иммиграцию Миграционной Службой, все было сделано в кратчайшие сроки и в лучшем виде через суд! Огромное спасибо!</p><p class="reviews-name">Вишняков Валентин Александрович</p></div><div class="reviews-item"><p>Хочу поблагодарить Дмитрия за оказание квалифицированной юридической помощи в сложном бракоразводном процессе, в результате судебного разбирательства ребенок остался со мной, а мужа обязали платить алименты.</p><p class="reviews-name">Кондратенко Евгения</p></div><div class="reviews-item"><p>Большое спасибо Соловьеву Дмитрию за добросовестно проделанную работу в решении наследственного вопроса. Очень ответственный и грамотный адвокат, который вникает в дело, и находит решения на всех этапах!</p><p class="reviews-name">Светлана Игоревна</p></div><div class="reviews-item"><p>Благодаря помощи адвоката Соловьева Дмитрия Игоревича, нам с мужем удалось в судебном порядке повысить военную пенсию на целых 20%. От лица нашей семьи хочу выразить Вам благодарность.</p><p class="reviews-name">Игнатова Екатерина Олеговна</p></div></div></div></section><script>/**
+@font-face{font-family:swiper-icons;src:url('data:application/font-woff;charset=utf-8;base64, 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') format('woff');font-weight:400;font-style:normal}:root{--swiper-theme-color:#007aff}.swiper-container{margin-left:auto;margin-right:auto;position:relative;overflow:hidden;list-style:none;padding:0;z-index:1}.swiper-container-vertical>.swiper-wrapper{flex-direction:column}.swiper-wrapper{position:relative;width:100%;height:100%;z-index:1;display:flex;transition-property:transform;box-sizing:content-box}.swiper-container-android .swiper-slide,.swiper-wrapper{transform:translate3d(0px,0,0)}.swiper-container-multirow>.swiper-wrapper{flex-wrap:wrap}.swiper-container-multirow-column>.swiper-wrapper{flex-wrap:wrap;flex-direction:column}.swiper-container-free-mode>.swiper-wrapper{transition-timing-function:ease-out;margin:0 auto}.swiper-slide{flex-shrink:0;width:100%;height:100%;position:relative;transition-property:transform}.swiper-slide-invisible-blank{visibility:hidden}.swiper-container-autoheight,.swiper-container-autoheight .swiper-slide{height:auto}.swiper-container-autoheight .swiper-wrapper{align-items:flex-start;transition-property:transform,height}.swiper-container-3d{perspective:1200px}.swiper-container-3d .swiper-cube-shadow,.swiper-container-3d .swiper-slide,.swiper-container-3d .swiper-slide-shadow-bottom,.swiper-container-3d .swiper-slide-shadow-left,.swiper-container-3d .swiper-slide-shadow-right,.swiper-container-3d .swiper-slide-shadow-top,.swiper-container-3d .swiper-wrapper{transform-style:preserve-3d}.swiper-container-3d .swiper-slide-shadow-bottom,.swiper-container-3d .swiper-slide-shadow-left,.swiper-container-3d .swiper-slide-shadow-right,.swiper-container-3d .swiper-slide-shadow-top{position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:none;z-index:10}.swiper-container-3d .swiper-slide-shadow-left{background-image:linear-gradient(to left,rgba(0,0,0,.5),rgba(0,0,0,0))}.swiper-container-3d .swiper-slide-shadow-right{background-image:linear-gradient(to right,rgba(0,0,0,.5),rgba(0,0,0,0))}.swiper-container-3d .swiper-slide-shadow-top{background-image:linear-gradient(to top,rgba(0,0,0,.5),rgba(0,0,0,0))}.swiper-container-3d .swiper-slide-shadow-bottom{background-image:linear-gradient(to bottom,rgba(0,0,0,.5),rgba(0,0,0,0))}.swiper-container-css-mode>.swiper-wrapper{overflow:auto;scrollbar-width:none;-ms-overflow-style:none}.swiper-container-css-mode>.swiper-wrapper::-webkit-scrollbar{display:none}.swiper-container-css-mode>.swiper-wrapper>.swiper-slide{scroll-snap-align:start start}.swiper-container-horizontal.swiper-container-css-mode>.swiper-wrapper{scroll-snap-type:x mandatory}.swiper-container-vertical.swiper-container-css-mode>.swiper-wrapper{scroll-snap-type:y mandatory}:root{--swiper-navigation-size:44px}.swiper-button-next,.swiper-button-prev{position:absolute;top:50%;width:calc(var(--swiper-navigation-size)/ 44 * 27);height:var(--swiper-navigation-size);margin-top:calc(-1 * var(--swiper-navigation-size)/ 2);z-index:10;cursor:pointer;display:flex;align-items:center;justify-content:center;color:var(--swiper-navigation-color,var(--swiper-theme-color))}.swiper-button-next.swiper-button-disabled,.swiper-button-prev.swiper-button-disabled{opacity:.35;cursor:auto;pointer-events:none}.swiper-button-next:after,.swiper-button-prev:after{font-family:swiper-icons;font-size:var(--swiper-navigation-size);text-transform:none!important;letter-spacing:0;text-transform:none;font-variant:initial;line-height:1}.swiper-button-prev,.swiper-container-rtl .swiper-button-next{left:0px;right:auto}.swiper-button-prev:after,.swiper-container-rtl .swiper-button-next:after{content:'prev'}.swiper-button-next,.swiper-container-rtl .swiper-button-prev{right:0px;left:auto}.swiper-button-next:after,.swiper-container-rtl .swiper-button-prev:after{content:'next'}.swiper-button-next.swiper-button-white,.swiper-button-prev.swiper-button-white{--swiper-navigation-color:#ffffff}.swiper-button-next.swiper-button-black,.swiper-button-prev.swiper-button-black{--swiper-navigation-color:#000000}.swiper-button-lock{display:none}.swiper-pagination{position:absolute;text-align:center;transition:.3s opacity;transform:translate3d(0,0,0);z-index:10}.swiper-pagination.swiper-pagination-hidden{opacity:0}.swiper-container-horizontal>.swiper-pagination-bullets,.swiper-pagination-custom,.swiper-pagination-fraction{bottom:0px;left:0;width:100%}.swiper-pagination-bullets-dynamic{overflow:hidden;font-size:0}.swiper-pagination-bullets-dynamic .swiper-pagination-bullet{transform:scale(.33);position:relative}.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active{transform:scale(1)}.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-main{transform:scale(1)}.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev{transform:scale(.66)}.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev-prev{transform:scale(.33)}.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next{transform:scale(.66)}.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next-next{transform:scale(.33)}.swiper-pagination-bullet{width:8px;height:8px;display:inline-block;border-radius:100%;background:#000;opacity:.2}button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-webkit-appearance:none;-moz-appearance:none;appearance:none}.swiper-pagination-clickable .swiper-pagination-bullet{cursor:pointer}.swiper-pagination-bullet-active{opacity:1;background:var(--swiper-pagination-color,var(--swiper-theme-color))}.swiper-container-vertical>.swiper-pagination-bullets{right:10px;top:50%;transform:translate3d(0px,-50%,0)}.swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet{margin:6px 0;display:block}.swiper-container-vertical>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic{top:50%;transform:translateY(-50%);width:8px}.swiper-container-vertical>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet{display:inline-block;transition:.2s transform,.2s top}.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{margin:0 4px}.swiper-container-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic{left:50%;transform:translateX(-50%);white-space:nowrap}.swiper-container-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet{transition:.2s transform,.2s left}.swiper-container-horizontal.swiper-container-rtl>.swiper-pagination-bullets-dynamic .swiper-pagination-bullet{transition:.2s transform,.2s right}.swiper-pagination-progressbar{background:rgba(0,0,0,.25);position:absolute}.swiper-pagination-progressbar .swiper-pagination-progressbar-fill{background:var(--swiper-pagination-color,var(--swiper-theme-color));position:absolute;left:0;top:0;width:100%;height:100%;transform:scale(0);transform-origin:left top}.swiper-container-rtl .swiper-pagination-progressbar .swiper-pagination-progressbar-fill{transform-origin:right top}.swiper-container-horizontal>.swiper-pagination-progressbar,.swiper-container-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite{width:100%;height:4px;left:0;top:0}.swiper-container-horizontal>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite,.swiper-container-vertical>.swiper-pagination-progressbar{width:4px;height:100%;left:0;top:0}.swiper-pagination-white{--swiper-pagination-color:#ffffff}.swiper-pagination-black{--swiper-pagination-color:#000000}.swiper-pagination-lock{display:none}.swiper-scrollbar{border-radius:10px;position:relative;-ms-touch-action:none;background:rgba(0,0,0,.1)}.swiper-container-horizontal>.swiper-scrollbar{position:absolute;left:1%;bottom:3px;z-index:50;height:5px;width:98%}.swiper-container-vertical>.swiper-scrollbar{position:absolute;right:3px;top:1%;z-index:50;width:5px;height:98%}.swiper-scrollbar-drag{height:100%;width:100%;position:relative;background:rgba(0,0,0,.5);border-radius:10px;left:0;top:0}.swiper-scrollbar-cursor-drag{cursor:move}.swiper-scrollbar-lock{display:none}.swiper-zoom-container{width:100%;height:100%;display:flex;justify-content:center;align-items:center;text-align:center}.swiper-zoom-container>canvas,.swiper-zoom-container>img,.swiper-zoom-container>svg{max-width:100%;max-height:100%;object-fit:contain}.swiper-slide-zoomed{cursor:move}.swiper-lazy-preloader{width:42px;height:42px;position:absolute;left:50%;top:50%;margin-left:-21px;margin-top:-21px;z-index:10;transform-origin:50%;animation:swiper-preloader-spin 1s infinite linear;box-sizing:border-box;border:4px solid var(--swiper-preloader-color,var(--swiper-theme-color));border-radius:50%;border-top-color:transparent}.swiper-lazy-preloader-white{--swiper-preloader-color:#fff}.swiper-lazy-preloader-black{--swiper-preloader-color:#000}@keyframes swiper-preloader-spin{100%{transform:rotate(360deg)}}.swiper-container .swiper-notification{position:absolute;left:0;top:0;pointer-events:none;opacity:0;z-index:-1000}.swiper-container-fade.swiper-container-free-mode .swiper-slide{transition-timing-function:ease-out}.swiper-container-fade .swiper-slide{pointer-events:none;transition-property:opacity}.swiper-container-fade .swiper-slide .swiper-slide{pointer-events:none}.swiper-container-fade .swiper-slide-active,.swiper-container-fade .swiper-slide-active .swiper-slide-active{pointer-events:auto}.swiper-container-cube{overflow:visible}.swiper-container-cube .swiper-slide{pointer-events:none;-webkit-backface-visibility:hidden;backface-visibility:hidden;z-index:1;visibility:hidden;transform-origin:0 0;width:100%;height:100%}.swiper-container-cube .swiper-slide .swiper-slide{pointer-events:none}.swiper-container-cube.swiper-container-rtl .swiper-slide{transform-origin:100% 0}.swiper-container-cube .swiper-slide-active,.swiper-container-cube .swiper-slide-active .swiper-slide-active{pointer-events:auto}.swiper-container-cube .swiper-slide-active,.swiper-container-cube .swiper-slide-next,.swiper-container-cube .swiper-slide-next+.swiper-slide,.swiper-container-cube .swiper-slide-prev{pointer-events:auto;visibility:visible}.swiper-container-cube .swiper-slide-shadow-bottom,.swiper-container-cube .swiper-slide-shadow-left,.swiper-container-cube .swiper-slide-shadow-right,.swiper-container-cube .swiper-slide-shadow-top{z-index:0;-webkit-backface-visibility:hidden;backface-visibility:hidden}.swiper-container-cube .swiper-cube-shadow{position:absolute;left:0;bottom:0px;width:100%;height:100%;background:#000;opacity:.6;-webkit-filter:blur(50px);filter:blur(50px);z-index:0}.swiper-container-flip{overflow:visible}.swiper-container-flip .swiper-slide{pointer-events:none;-webkit-backface-visibility:hidden;backface-visibility:hidden;z-index:1}.swiper-container-flip .swiper-slide .swiper-slide{pointer-events:none}.swiper-container-flip .swiper-slide-active,.swiper-container-flip .swiper-slide-active .swiper-slide-active{pointer-events:auto}.swiper-container-flip .swiper-slide-shadow-bottom,.swiper-container-flip .swiper-slide-shadow-left,.swiper-container-flip .swiper-slide-shadow-right,.swiper-container-flip .swiper-slide-shadow-top{z-index:0;-webkit-backface-visibility:hidden;backface-visibility:hidden}
+</style><section class="name_desc"><h1 class="name_desc-h1">Адвокат Дмитрий Соловьёв <br>Юридические Услуги <br>в Одессе и по Украине</h1></section><section class="services-bg"><div id="services"></div><div class="services container"><div class="services_head"><h2 class="h2">ВИДЫ УСЛУГ</h2></div><div class="col col-left"><div class="services_icon_wrap"><i class="services_icon"><?xml version="1.0" encoding="iso-8859-1"?><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.004 512.004" style="enable-background:new 0 0 512.004 512.004;" xml:space="preserve"><g><g><path d="M501.24,180.858L331.137,10.755c-14.327-14.327-37.636-14.327-51.963,0l-89.869,89.869c-14.327,14.327-14.327,37.637,0,51.964l54.038,54.039L227.7,222.27l-8.997,8.997l62.026,62.025l24.64-24.64l54.039,54.039c6.938,6.94,16.167,10.762,25.982,10.762c9.813,0,19.042-3.822,25.982-10.762l89.869-89.869c6.94-6.939,10.763-16.167,10.763-25.983S508.179,187.797,501.24,180.858z"/></g></g><g><g><rect x="-9.889" y="338.376" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -232.2751 203.7074)" width="279.296" height="87.717"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></i></div><a href="legal-services.html" target="_blank">Юридические консультации</a><!-- a(href="lawyer-in-civil-cases.html" target="_blank") Адвокат по гражданским делам--><a href="family-disputes.html" target="_blank">Семейные споры</a><a href="housing-disputes.html" target="_blank">Жилищные споры</a><a href="auto-advocat.html" target="_blank">Помощь при ДТП - АвтоАдвокат</a><!-- a(href="#") Решение споров по земле и недвижимости--><a href="disputes-with-banks.html" target="_blank">Споры с банками и МФО</a></div><div class="col col-right"><div class="services_icon_wrap"><i class="services_icon"><?xml version="1.0" encoding="iso-8859-1"?><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 453.44 453.44" style="enable-background:new 0 0 453.44 453.44;" xml:space="preserve"><g><g><path d="M397.76,389.722h-0.16H55.68C25.001,389.897,0.175,414.723,0,445.402c0,4.418,3.582,8,8,8h437.44c4.418,0,8-3.582,8-8C453.265,414.723,428.439,389.897,397.76,389.722z"/></g></g><g><g><path d="M452.652,145.165c-0.214-2.265-1.382-4.332-3.212-5.683L230.92,1.242c-2.584-1.605-5.856-1.605-8.44,0L4.2,139.122c-3.746,2.343-4.883,7.279-2.541,11.025c1.349,2.157,3.644,3.544,6.181,3.735h437.6C449.839,153.466,453.068,149.564,452.652,145.165z"/></g></g><g><g><path d="M38.64,165.842c7.231,18.842,24.04,32.335,44,35.32v176.56h63.64v-176h48.6v176h63.52v-176H307v176h63.64v-176.56c19.96-2.985,36.769-16.478,44-35.32H38.64z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></i></div><a href="representation-of-interests.html" target="_blank">Представление интересов в суде</a><a href="criminal-proceedings.html" target="_blank">Уголовные дела</a><a href="hereditary-disputes.html" target="_blank">Наследственные споры</a><a href="migration-services.html" target="_blank">Миграционные услуги</a><a href="recalculation-of-military-pensions.html" target="_blank">Перерасчет военных пенсий</a><!-- a(href="#") Юридическое обслуживание предприятий--><!-- a(href="#") Подготовка и экспертиза договоров--><!-- a(href="#") Обжалование незаконных решений и штрафов--></div></div></section><section class="about-section"><div id="about"></div><div class="about container"><div class="services_head"><h2 class="h2">ОБО МНЕ</h2></div><div class="col col-left"><img class="I-img" data-src="img/soloviov.jpg" alt=""/></div><div class="col col-right"><p>Приветствую Вас на моем сайте, если у Вас возникли вопросы юридического характера, в которых требуется помощь адвоката или юриста, Вы можете обратиться ко мне для получения консультации. У меня индивидуальный подход к каждому клиенту и я всегда нацелен только на положительный результат, обращайтесь ко мне и останетесь довольны.</p><b>Стоимость оказания правовой помощи зависит от сложности и возможной продолжительности дела, объема предстоящей работы. Связаться со мной можно по Телефону или по Email в разделе Контакты.</b><img class="I-img diplom" data-src="img/sertifikat.jpg" alt=""/></div></div></section><section class="advant-section"><div class="advant container"><div class="services_head"><h2 class="h2">ПРЕИМУЩЕСТВА РАБОТЫ СО МНОЙ</h2></div><div class="col col-left"><img class="I-img advant-img" data-src="img/property.jpg" alt="ПРЕИМУЩЕСТВА РАБОТЫ СО МНОЙ"/></div><div class="col col-right"> <div class="list-icon"><div class="col-icon"><?xml version="1.0" encoding="iso-8859-1"?><svg version="1.1" style="height: 34px; width: 34px;" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><path d="M437.02,74.98C388.667,26.629,324.38,0,256,0S123.333,26.629,74.98,74.98C26.629,123.333,0,187.62,0,256s26.629,132.667,74.98,181.02C123.333,485.371,187.62,512,256,512s132.667-26.629,181.02-74.98C485.371,388.667,512,324.38,512,256S485.371,123.333,437.02,74.98z M256,70c30.327,0,55,24.673,55,55c0,30.327-24.673,55-55,55c-30.327,0-55-24.673-55-55C201,94.673,225.673,70,256,70z M326,420H186v-30h30V240h-30v-30h110v180h30V420z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></div><div class="advant-text"><h3 class="h3">Честность</h3><p>Я реально оценю ситуацию и перспективы решения вашей проблемы и буду работать исключительно с целью выиграть дело в суде или добиться иного положительного результата.</p></div></div><div class="list-icon"><div class="col-icon"><?xml version="1.0" encoding="iso-8859-1"?><svg version="1.1" style="height: 34px; width: 34px;" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><path d="M437.02,74.98C388.667,26.629,324.38,0,256,0S123.333,26.629,74.98,74.98C26.629,123.333,0,187.62,0,256s26.629,132.667,74.98,181.02C123.333,485.371,187.62,512,256,512s132.667-26.629,181.02-74.98C485.371,388.667,512,324.38,512,256S485.371,123.333,437.02,74.98z M256,70c30.327,0,55,24.673,55,55c0,30.327-24.673,55-55,55c-30.327,0-55-24.673-55-55C201,94.673,225.673,70,256,70z M326,420H186v-30h30V240h-30v-30h110v180h30V420z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></div><div class="advant-text"><h3 class="h3">Компетентность</h3><p>Я оказываю правовую помощь лишь в тех областях, в которых имею значительный опыт и накопленные знания.</p></div></div><div class="list-icon"><div class="col-icon"><?xml version="1.0" encoding="iso-8859-1"?><svg version="1.1" style="height: 34px; width: 34px;" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><path d="M437.02,74.98C388.667,26.629,324.38,0,256,0S123.333,26.629,74.98,74.98C26.629,123.333,0,187.62,0,256s26.629,132.667,74.98,181.02C123.333,485.371,187.62,512,256,512s132.667-26.629,181.02-74.98C485.371,388.667,512,324.38,512,256S485.371,123.333,437.02,74.98z M256,70c30.327,0,55,24.673,55,55c0,30.327-24.673,55-55,55c-30.327,0-55-24.673-55-55C201,94.673,225.673,70,256,70z M326,420H186v-30h30V240h-30v-30h110v180h30V420z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></div><div class="advant-text"><h3 class="h3">Доступность</h3><p>Я оказываю адвокатские услуги в Одессе по вполне доступным ценам. При этом, юридические услуги могут быть оплачены в различной форме. Предусмотрена как оплата за отдельные действия, так и единоразовая оплата.</p></div></div></div></div></section><section class="examples-section"><div id="examples"></div><div class="reviews container"><div class="services_head"><h2 class="h2">ПРИМЕРЫ ВЫИГРАННЫХ ДЕЛ</h2></div><div class="swiper-container reviews-row slider1"><div class="swiper-wrapper"><div class="swiper-slide"><a class="reviews-item" href="https://reyestr.court.gov.ua/Review/92920614" target="_blank"><div class="card card_img_bg"><div class="card-top"><img class="card-img-trident" data-src="img/trident.png" alt="alt"/><br/><br/><span>Дело №</span><p>420/6412/20</p></div><p>Восстановление разрешения на иммиграцию и вида на жительство</p></div></a></div><div class="swiper-slide"><a class="reviews-item" href="https://reyestr.court.gov.ua/Review/92730623" target="_blank"><div class="card card_img_bg"><div class="card-top"><img class="card-img-trident" data-src="img/trident.png" alt="alt"/><br/><br/><span>Дело №</span><p>521/2738/2012</p></div><p>Кредитный спор, банку отказали во взыскании более 1 миллиона гривен с поручителя</p></div></a></div><div class="swiper-slide"><a class="reviews-item" href="https://reyestr.court.gov.ua/Review/92789860" target="_blank"><div class="card card_img_bg"><div class="card-top"><img class="card-img-trident" data-src="img/trident.png" alt="alt"/><br/><br/><span>Дело №</span><p>1519/2738/2012</p></div><p>Отмена запрета на выезд из Украины</p></div></a></div><div class="swiper-slide"><a class="reviews-item" href="https://reyestr.court.gov.ua/Review/88203700" target="_blank"><div class="card card_img_bg"><div class="card-top"><img class="card-img-trident" data-src="img/trident.png" alt="alt"/><br/><br/><span>Дело №</span><p>420/1130/20</p></div><p>Повышение военной пенсии с 70% до 90% денежного обеспечения</p></div></a></div><div class="swiper-slide"><a class="reviews-item" href="https://reyestr.court.gov.ua/Review/87227087" target="_blank"><div class="card card_img_bg"><div class="card-top"><img class="card-img-trident" data-src="img/trident.png" alt="alt"/><br/><br/><span>Дело №</span><p>520/7090/19</p></div><p>Выселение</p></div></a></div><div class="swiper-slide"><a class="reviews-item" href="https://reyestr.court.gov.ua/Review/91612390" target="_blank"><div class="card card_img_bg"><div class="card-top"><img class="card-img-trident" data-src="img/trident.png" alt="alt"/><br/><br/><span>Дело №</span><p>522/17179/19</p></div><p>Признание лица недееспособным и назначение опекуна</p></div></a></div><div class="swiper-slide"><a class="reviews-item" href="https://reyestr.court.gov.ua/Review/85968018" target="_blank"><div class="card card_img_bg"><div class="card-top"><img class="card-img-trident" data-src="img/trident.png" alt="alt"/><br/><br/><span>Дело №</span><p>521/15220/19</p></div><p>Установление факта проживания на территории Украины</p></div></a></div></div><div class="swiper-pagination"> </div><div class="swiper-button-prev"></div><div class="swiper-button-next"></div></div></div></section><section class="reviews-section"><div id="reviews"></div><div class="reviews container"><div class="services_head"><h2 class="h2">ОТЗЫВЫ О МОЕЙ РАБОТЕ</h2></div><div class="swiper-container reviews-row slider2"><div class="swiper-wrapper"><div class="swiper-slide"><div class="reviews-item-"><p>Обращался к адвокату Дмитрию по вопросу обжалования незаконной отмены разрешения на иммиграцию Миграционной Службой, все было сделано в кратчайшие сроки и в лучшем виде через суд! Огромное спасибо!</p><div class="reviews-name"><img class="avatar_img" data-src="img/ava1.jpg" alt="alt"/><p>Вишняков Валентин</p></div></div></div><div class="swiper-slide"><div class="reviews-item-"><p>Хочу поблагодарить Дмитрия за оказание квалифицированной юридической помощи в сложном бракоразводном процессе, в результате судебного разбирательства ребенок остался со мной, а мужа обязали платить алименты.</p><div class="reviews-name"><img class="avatar_img" data-src="img/ava6.jpg" alt="alt"/><p>Кондратенко Евгения</p></div></div></div><div class="swiper-slide"><div class="reviews-item-"><p>Большое спасибо Соловьеву Дмитрию за добросовестно проделанную работу в решении наследственного вопроса. Очень ответственный и грамотный адвокат, который вникает в дело, и находит решения на всех этапах!</p><div class="reviews-name"><img class="avatar_img" data-src="img/ava3.jpg" alt="alt"/><p>Светлана Игоревна</p></div></div></div><div class="swiper-slide"><div class="reviews-item-"><p>Благодаря помощи адвоката Соловьева Дмитрия Игоревича, нам с мужем удалось в судебном порядке повысить военную пенсию на целых 20%. От лица нашей семьи хочу выразить Вам благодарность.</p><div class="reviews-name"><img class="avatar_img" data-src="img/ava4.jpg" alt="alt"/><p>Игнатова Екатерина</p></div></div></div></div><div class="swiper-pagination"></div></div><div class="swiper-button-prev swiper-button-prev2"></div><div class="swiper-button-next swiper-button-next2"></div></div></section><script>/**
  * Swiper 6.4.1
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * https://swiperjs.com
@@ -1194,14 +1256,82 @@ function togleDropMenu() {
     document.getElementsByTagName("header")[0].classList.toggle("menu-open");
 };
 
+var oneRun1 = true;
+var oneRun2 = true;
+
+window.addEventListener('DOMContentLoaded', function () {
+  var about = document.getElementsByClassName("about-section")[0];
+  var I_img = document.getElementsByClassName("I-img")[0];
+  var diplom = document.getElementsByClassName("diplom")[0];
+  var advant = document.getElementsByClassName("advant")[0];
+  var advant_img = document.getElementsByClassName("advant-img")[0];
+  
+  var examples = document.getElementById("examples");
+  
+  var card_img_trident = document.getElementsByClassName("card-img-trident");
+  var card_img_bg = document.getElementsByClassName("card_img_bg");
+  var call_bg = document.getElementsByClassName("call-bg")[0];
+  var avatar_img = document.getElementsByClassName("avatar_img");
 
 
 
-var mySwiper = new Swiper('.swiper-container', {
+  var TikTok_img = document.getElementsByClassName("TikTok_img")[0];
+  var inst_img = document.getElementsByClassName("inst_img")[0];
+  var Telegram_img = document.getElementsByClassName("Telegram_img")[0];
+
+  
+  var contact_section = document.getElementsByClassName("contact-section")[0];
+
+
+  window.addEventListener('scroll', function () {
+    // about.offsetTop
+    // about.offsetHeight
+    // window.scrollY;
+    if (window.scrollY > 200) {
+      if (oneRun1) {
+        oneRun1 = false;
+        console.log(2);
+        I_img.setAttribute("src", I_img.getAttribute("data-src"));
+        setTimeout(function () {
+          diplom.setAttribute("src", diplom.getAttribute("data-src"))
+        }, 100);
+        setTimeout(function () {
+          advant_img.setAttribute("src", advant_img.getAttribute("data-src"))
+        }, 150);
+        setTimeout(function () {
+          for (var i = 0; i < card_img_bg.length; i++) {
+            card_img_trident[i].setAttribute("src", card_img_trident[i].getAttribute("data-src"))
+            card_img_bg[i].setAttribute("style", "background-image: url('img/paper.jpg');")
+          }
+          for (var i = 0; i < avatar_img.length; i++) {
+            avatar_img[i].setAttribute("src", avatar_img[i].getAttribute("data-src"))
+          }
+          call_bg.setAttribute("style", "background-image: url('img/testi1.jpg');")
+        }, 210); 
+      }
+    }
+    if (window.scrollY > 300) {
+
+      if (oneRun2) {
+        oneRun2 = false;
+        TikTok_img.setAttribute("src", TikTok_img.getAttribute("data-src"));
+        inst_img.setAttribute("src", inst_img.getAttribute("data-src"));
+        Telegram_img.setAttribute("src", Telegram_img.getAttribute("data-src"));
+        contact_section.innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d343.46146287312!2d30.72697110073906!3d46.47461432689205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c7cbd8713492af%3A0xbacb4a27eb10d5dc!2z0JDQtNCy0L7QutCw0YIg0J7QtNC10YHRgdCwINCh0L7Qu9C-0LLRjNC10LIg0JTQvNC40YLRgNC40Lkg0JjQs9C-0YDQtdCy0LjRhw!5e0!3m2!1sru!2sua!4v1608105929899!5m2!1sru!2sua" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>';
+
+      }
+    }
+    
+  })
+
+
+
+})
+var mySwiper = new Swiper('.slider1', {
     // Optional parameters
     loop: true,
   
-    slidesPerView: 3,
+    slidesPerView: 4,
     spaceBetween: 30,
     // If we need pagination
     pagination: {
@@ -1213,6 +1343,48 @@ var mySwiper = new Swiper('.swiper-container', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    breakpoints: {
+      199: {
+          slidesPerView: 1
+      },
+      999: {
+          slidesPerView: 2
+      },
+      1400: {
+          slidesPerView: 3
+      }
+  }
+  
+  })
+  
+
+  var mySwiper = new Swiper('.slider2', {
+    // Optional parameters
+    loop: true,
+  
+    slidesPerView: 4,
+    spaceBetween: 30,
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next2',
+      prevEl: '.swiper-button-prev2',
+    },
+    breakpoints: {
+      199: {
+          slidesPerView: 1
+      },
+      999: {
+          slidesPerView: 2
+      },
+      1400: {
+          slidesPerView: 3
+      }
+  }
   
   })</script><section class="call-section"><div class="container"><div class="services_head"><h2 class="h2">ЗВОНИТЕ ПРЯМО СЕЙЧАС!</h2></div><a class="call-button" href="tel:+380935299116">+38(093) 529-91-16</a></div></section><div class="call-bg"></div><section class="contact-section"><div id="contact"></div><div class="container"><div class="services_head"><h2 class="h2">КОНТАКТЫ</h2></div></div><a class="contact-mini-item" href="#">Офис: г. Одесса, улица Базарная, 85</a><a class="contact-mini-item" href="tel:+380935299116"><?xml class="contact-mini-icon" version="1.0" encoding="iso-8859-1"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg class="contact-mini-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35;" xml:space="preserve"><g><path d="M25.302,0H9.698c-1.3,0-2.364,1.063-2.364,2.364v30.271C7.334,33.936,8.398,35,9.698,35h15.604c1.3,0,2.364-1.062,2.364-2.364V2.364C27.666,1.063,26.602,0,25.302,0z M15.004,1.704h4.992c0.158,0,0.286,0.128,0.286,0.287c0,0.158-0.128,0.286-0.286,0.286h-4.992c-0.158,0-0.286-0.128-0.286-0.286C14.718,1.832,14.846,1.704,15.004,1.704z M17.5,33.818c-0.653,0-1.182-0.529-1.182-1.183s0.529-1.182,1.182-1.182s1.182,0.528,1.182,1.182S18.153,33.818,17.5,33.818z M26.021,30.625H8.979V3.749h17.042V30.625z"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>+38(093) 529-91-16</a><a class="contact-mini-item" href="mailto:advokat.soloviov@gmail.com"><?xml class="contact-mini-icon" version="1.0" encoding="iso-8859-1"?><svg class="contact-mini-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><g><path d="M10.688,95.156C80.958,154.667,204.26,259.365,240.5,292.01c4.865,4.406,10.083,6.646,15.5,6.646c5.406,0,10.615-2.219,15.469-6.604c36.271-32.677,159.573-137.385,229.844-196.896c4.375-3.698,5.042-10.198,1.5-14.719C494.625,69.99,482.417,64,469.333,64H42.667c-13.083,0-25.292,5.99-33.479,16.438C5.646,84.958,6.313,91.458,10.688,95.156z"/><path d="M505.813,127.406c-3.781-1.76-8.229-1.146-11.375,1.542C416.51,195.01,317.052,279.688,285.76,307.885c-17.563,15.854-41.938,15.854-59.542-0.021c-33.354-30.052-145.042-125-208.656-178.917c-3.167-2.688-7.625-3.281-11.375-1.542C2.417,129.156,0,132.927,0,137.083v268.25C0,428.865,19.135,448,42.667,448h426.667C492.865,448,512,428.865,512,405.333v-268.25C512,132.927,509.583,129.146,505.813,127.406z"/></g></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>advokat.soloviov@gmail.com</a><div class="contact-soc-wrap"><a class="contact-mini-item facebook" href="https://www.facebook.com/profile.php?id=100021842880966" target="_blank">Facebook</a><a class="contact-mini-item youtube" href="https://www.youtube.com/channel/UCVG3-hESyVPSVU6gydTPDGw?view_as=subscriber" target="_blank"><svg viewBox="0 0 200 60" preserveAspectRatio="xMidYMid meet" focusable="false" style="pointer-events: none; height: 24px;"><g viewBox="0 0 200 60" preserveAspectRatio="xMidYMid meet" class="style-scope ytd-topbar-logo-renderer">
     <g>
@@ -1255,7 +1427,7 @@ var mySwiper = new Swiper('.swiper-container', {
           c0.13,1.17,0.2,2.83,0.2,4.99V36.93z" class="style-scope ytd-topbar-logo-renderer"></path>
       </g>
     </g>
-  </g></svg></a></div></section><footer></footer><script>
+  </g></svg></a><a class="contact-mini-item TikTok" href="https://www.tiktok.com/@lawyersolo" target="_blank"><img class="TikTok_img" data-src="img/logo-TikTok.png" alt="alt"/><span>Tik Tok</span></a><a class="contact-mini-item inst" href="https://www.instagram.com/lawyer_solo_odessa/" target="_blank"><img class="inst_img" data-src="img/Logo-inst.png" alt="alt"/></a><a class="contact-mini-item Telegram" href="https://t.me/lawyersolo" target="_blank"><img class="Telegram_img" data-src="img/t_logo.png" alt="alt"/><span>Telegram</span></a></div></section><footer></footer><script>
 document.getElementsByClassName("burger")[0].onclick = function(){togleDropMenu()};
 var menu_items = document.getElementsByClassName("menu-item")
 document.getElementsByClassName("fon-menu")[0].onclick = function(){togleDropMenu()};
@@ -1270,14 +1442,82 @@ function togleDropMenu() {
     document.getElementsByTagName("header")[0].classList.toggle("menu-open");
 };
 
+var oneRun1 = true;
+var oneRun2 = true;
+
+window.addEventListener('DOMContentLoaded', function () {
+  var about = document.getElementsByClassName("about-section")[0];
+  var I_img = document.getElementsByClassName("I-img")[0];
+  var diplom = document.getElementsByClassName("diplom")[0];
+  var advant = document.getElementsByClassName("advant")[0];
+  var advant_img = document.getElementsByClassName("advant-img")[0];
+  
+  var examples = document.getElementById("examples");
+  
+  var card_img_trident = document.getElementsByClassName("card-img-trident");
+  var card_img_bg = document.getElementsByClassName("card_img_bg");
+  var call_bg = document.getElementsByClassName("call-bg")[0];
+  var avatar_img = document.getElementsByClassName("avatar_img");
 
 
 
-var mySwiper = new Swiper('.swiper-container', {
+  var TikTok_img = document.getElementsByClassName("TikTok_img")[0];
+  var inst_img = document.getElementsByClassName("inst_img")[0];
+  var Telegram_img = document.getElementsByClassName("Telegram_img")[0];
+
+  
+  var contact_section = document.getElementsByClassName("contact-section")[0];
+
+
+  window.addEventListener('scroll', function () {
+    // about.offsetTop
+    // about.offsetHeight
+    // window.scrollY;
+    if (window.scrollY > 200) {
+      if (oneRun1) {
+        oneRun1 = false;
+        console.log(2);
+        I_img.setAttribute("src", I_img.getAttribute("data-src"));
+        setTimeout(function () {
+          diplom.setAttribute("src", diplom.getAttribute("data-src"))
+        }, 100);
+        setTimeout(function () {
+          advant_img.setAttribute("src", advant_img.getAttribute("data-src"))
+        }, 150);
+        setTimeout(function () {
+          for (var i = 0; i < card_img_bg.length; i++) {
+            card_img_trident[i].setAttribute("src", card_img_trident[i].getAttribute("data-src"))
+            card_img_bg[i].setAttribute("style", "background-image: url('img/paper.jpg');")
+          }
+          for (var i = 0; i < avatar_img.length; i++) {
+            avatar_img[i].setAttribute("src", avatar_img[i].getAttribute("data-src"))
+          }
+          call_bg.setAttribute("style", "background-image: url('img/testi1.jpg');")
+        }, 210); 
+      }
+    }
+    if (window.scrollY > 300) {
+
+      if (oneRun2) {
+        oneRun2 = false;
+        TikTok_img.setAttribute("src", TikTok_img.getAttribute("data-src"));
+        inst_img.setAttribute("src", inst_img.getAttribute("data-src"));
+        Telegram_img.setAttribute("src", Telegram_img.getAttribute("data-src"));
+        contact_section.innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d343.46146287312!2d30.72697110073906!3d46.47461432689205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c7cbd8713492af%3A0xbacb4a27eb10d5dc!2z0JDQtNCy0L7QutCw0YIg0J7QtNC10YHRgdCwINCh0L7Qu9C-0LLRjNC10LIg0JTQvNC40YLRgNC40Lkg0JjQs9C-0YDQtdCy0LjRhw!5e0!3m2!1sru!2sua!4v1608105929899!5m2!1sru!2sua" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>';
+
+      }
+    }
+    
+  })
+
+
+
+})
+var mySwiper = new Swiper('.slider1', {
     // Optional parameters
     loop: true,
   
-    slidesPerView: 3,
+    slidesPerView: 4,
     spaceBetween: 30,
     // If we need pagination
     pagination: {
@@ -1289,5 +1529,47 @@ var mySwiper = new Swiper('.swiper-container', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    breakpoints: {
+      199: {
+          slidesPerView: 1
+      },
+      999: {
+          slidesPerView: 2
+      },
+      1400: {
+          slidesPerView: 3
+      }
+  }
+  
+  })
+  
+
+  var mySwiper = new Swiper('.slider2', {
+    // Optional parameters
+    loop: true,
+  
+    slidesPerView: 4,
+    spaceBetween: 30,
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next2',
+      prevEl: '.swiper-button-prev2',
+    },
+    breakpoints: {
+      199: {
+          slidesPerView: 1
+      },
+      999: {
+          slidesPerView: 2
+      },
+      1400: {
+          slidesPerView: 3
+      }
+  }
   
   })</script>

@@ -60,7 +60,8 @@ section {
 #about,
 #reviews,
 #call,
-#contact {
+#contact,
+#examples {
   position: absolute;
   top: -36px;
   z-index: -8;
@@ -84,7 +85,7 @@ header {
   width: 100%;
   width: 100vw;
   box-shadow: 0 3px 3px rgba(0,0,0,0.05);
-  z-index: 4;
+  z-index: 40;
   margin-bottom: 3px;
 }
 .header-container {
@@ -115,6 +116,7 @@ nav {
   line-height: 70px;
   color: #222;
   padding-left: 10px;
+  padding-right: 5px;
   font-weight: 500;
   font-weight: bold;
 }
@@ -148,7 +150,7 @@ nav {
 .fon-menu {
   display: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .header-container {
     height: 50px;
   }
@@ -195,13 +197,10 @@ nav {
     backdrop-filter: blur(1px);
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .burger {
     display: none;
   }
-}
-.mb70or50 {
-  margin-bottom: 70px;
 }
 .contact-mini {
   display: flex;
@@ -215,7 +214,7 @@ nav {
   text-align: center;
   color: #111;
   vertical-align: middle;
-  padding: 16px 22px 16px 0px;
+  padding: 16px 20px 16px 0px;
 }
 .contact-mini-item:hover {
   color: #359;
@@ -238,13 +237,16 @@ nav {
   color: #385898;
   font-size: 18px;
   letter-spacing: -1px;
-  padding: 15px 15px 16px 0px;
+  padding: 15px 20px 16px 0px;
   font-weight: 600;
   font-weight: bold;
   text-decoration: none;
 }
 .youtube {
-  padding: 12px 15px 12px 0px;
+  padding: 12px 20px 12px 0px;
+}
+.mb70or50 {
+  margin-bottom: 70px;
 }
 @media (max-width: 470px) {
   .contact-mini {
@@ -265,7 +267,7 @@ nav {
     padding: 17px 15px 17px 0px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .mb70or50 {
     margin-bottom: 50px;
   }
@@ -277,9 +279,9 @@ nav {
   height: 600px;
   text-align: center;
   background-color: #777;
-  background-image: url("img/fon1_1920.jpg");
   background-position: center;
   background-size: cover;
+  background-image: url("img/fon1_400.jpg");
 }
 .name_desc-h1 {
   display: flex;
@@ -297,6 +299,7 @@ nav {
 @media (min-width: 200px) {
   .name_desc {
     height: 270px;
+    background-image: url("img/fon1_400.jpg");
   }
   .name_desc-h1 {
     line-height: 1.5;
@@ -309,19 +312,20 @@ nav {
   }
   .name_desc-h1 {
     line-height: 1.55;
-    font-size: 20px;
+    font-size: 19px;
   }
 }
 @media (min-width: 350px) {
   .name_desc {
     height: 320px;
+    background-image: url("img/fon1_600.jpg");
   }
   .name_desc-h1 {
     line-height: 1.6;
-    font-size: 23px;
+    font-size: 22px;
   }
 }
-@media (min-width: 400px) {
+@media (min-width: 410px) {
   .name_desc {
     height: 310px;
   }
@@ -348,6 +352,7 @@ nav {
 @media (min-width: 600px) {
   .name_desc {
     height: 410px;
+    background-image: url("img/fon1_1000.jpg");
   }
 }
 @media (min-width: 676px) {
@@ -376,6 +381,7 @@ nav {
 @media (min-width: 992px) {
   .name_desc {
     height: 540px;
+    background-image: url("img/fon1_1920.jpg");
   }
   .name_desc-h1 {
     line-height: 1.3;
@@ -405,6 +411,7 @@ nav {
   text-decoration: none;
   color: #3d449a;
   font-weight: bold;
+  font-size: 20px;
   padding: 8px;
   margin: 2px;
   width: 100%;
@@ -484,7 +491,7 @@ nav {
   .h2 {
     padding: 8px 10px 8px 10px;
     margin: 0 auto;
-    font-size: 18px;
+    font-size: 22px;
     line-height: 26px;
   }
 }
@@ -492,7 +499,7 @@ nav {
   .h2 {
     padding: 10px 15px 10px 15px;
     margin: 2px auto;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 28px;
   }
 }
@@ -500,7 +507,7 @@ nav {
   .h2 {
     padding: 12px 18px 12px 18px;
     margin: 4px auto;
-    font-size: 22px;
+    font-size: 26px;
     line-height: 32px;
   }
 }
@@ -508,33 +515,34 @@ nav {
   .h2 {
     padding: 14px 20px 14px 20px;
     margin: 6px auto;
-    font-size: 22px;
+    font-size: 28px;
   }
 }
 @media (min-width: 768px) {
   .h2 {
     padding: 16px 25px 16px 25px;
     margin: 8px auto;
-    font-size: 24px;
+    font-size: 30px;
   }
 }
 @media (min-width: 1200px) {
   .h2 {
     padding: 20px 30px 20px 30px;
     margin: 10px auto;
-    font-size: 26px;
+    font-size: 34px;
     font-weight: 700;
   }
 }
 .about-section,
 .contact-section,
-.reviews-section {
+.examples-section {
   background-color: #f2f2f2;
 }
 .contact-mini,
 .advant-section,
 .services-bg,
-header {
+header,
+.reviews-section {
   background-color: #fcfcfc;
 }
 .about,
@@ -605,22 +613,28 @@ header {
   background-size: cover;
 }
 .card-top {
-  display: inline-block;
-  margin-left: 25px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  display: block;
+  margin-top: 0px;
+  margin-bottom: 40px;
   font-size: 18px;
   text-decoration: none;
+  text-align: center;
 }
-.card-top div {
-  display: inline-block;
+.card-top img {
+  height: 40px;
 }
 .card-top span {
-  vertical-align: super;
+  text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
 }
 .card p {
   text-align: center;
+  text-decoration: underline;
+}
+.slider2,
+.slider1 {
+  padding-bottom: 30px !important;
 }
 .reviews p {
   font-weight: normal;
@@ -630,8 +644,12 @@ header {
 }
 .reviews-row {
   display: flex;
-  flex-wrap: wrap;
-  margin: -15px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.reviews-item- {
+  max-width: 350px;
+  margin: auto;
 }
 .reviews-item {
   width: 100%;
@@ -640,14 +658,45 @@ header {
   font-size: 16px;
   text-decoration: none;
 }
+@media (max-width: 440px) {
+  .reviews-item- {
+    max-width: 70%;
+  }
+}
 @media (max-width: 400px) {
   .reviews-item {
     padding: 8px 15px;
   }
 }
-p.reviews-name {
+.reviews-name {
+  height: 40px;
+}
+.reviews-name img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.reviews-name p {
+  display: inline-block;
+  vertical-align: text-bottom;
+  padding-left: 10px;
+  word-wrap: break-word;
+  height: 30px;
   font-size: 20px;
   font-weight: bold;
+}
+@media (max-width: 450px) {
+  .reviews-name {
+    height: auto;
+  }
+  .reviews-name img {
+    display: block;
+    margin: auto;
+  }
+  .reviews-name p {
+    display: block;
+    text-align: center;
+  }
 }
 @media (min-width: 576px) {
   .reviews-item {
@@ -657,6 +706,14 @@ p.reviews-name {
 @media (min-width: 1200px) {
   .reviews-item {
     width: 25%;
+  }
+}
+@media (min-width: 1400px) {
+  .swiper-button-prev2 {
+    left: -35px !important;
+  }
+  .swiper-button-next2 {
+    right: -35px !important;
   }
 }
 .call-section {
@@ -676,7 +733,6 @@ p.reviews-name {
 .call-bg {
   position: fixed;
   z-index: -1;
-  background-image: url("img/testi1.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -694,7 +750,8 @@ p.reviews-name {
 .services-bg,
 .advant-section,
 .call-section,
-.contact-section {
+.contact-section,
+.examples-section {
   padding: 15px 0 20px 0;
 }
 .contact-section a {
@@ -707,6 +764,45 @@ p.reviews-name {
   display: flex;
   justify-content: center;
 }
+.facebook {
+  color: #385898;
+  font-size: 18px;
+  letter-spacing: -1px;
+  padding: 13px 20px 16px 0px;
+  font-weight: 600;
+  font-weight: bold;
+  text-decoration: none;
+}
+.youtube {
+  padding: 10px 20px 12px 0px;
+}
+.TikTok {
+  padding: 10px 20px 10px 0px;
+}
+.TikTok img {
+  height: 19px;
+}
+.TikTok span {
+  padding-left: 3px;
+}
+.inst {
+  padding: 13px 20px 3px 0px;
+}
+.inst img {
+  height: 24px;
+}
+.Telegram {
+  padding: 12px 20px 5px 0px;
+}
+.Telegram img {
+  display: inline-block;
+  margin-bottom: -2px;
+  height: 19px;
+}
+.Telegram span {
+  font-size: 17px;
+  padding-left: 3px;
+}
 @media (max-width: 400px) {
   .contact-section a {
     font-size: 16px;
@@ -718,7 +814,8 @@ p.reviews-name {
   .services-bg,
   .advant-section,
   .call-section,
-  .contact-section {
+  .contact-section,
+  .examples-section {
     padding: 15px 0 20px 0;
   }
 }
@@ -728,7 +825,8 @@ p.reviews-name {
   .services-bg,
   .advant-section,
   .call-section,
-  .contact-section {
+  .contact-section,
+  .examples-section {
     padding: 18px 0 25px 0;
   }
 }
@@ -738,7 +836,8 @@ p.reviews-name {
   .services-bg,
   .advant-section,
   .call-section,
-  .contact-section {
+  .contact-section,
+  .examples-section {
     padding: 20px 0 30px 0;
   }
 }
@@ -757,8 +856,4 @@ p.reviews-name {
 footer {
   height: 40px;
   background-color: #3d449a;
-}
-.swiper-container {
-  width: 600px;
-  height: 300px;
 }
